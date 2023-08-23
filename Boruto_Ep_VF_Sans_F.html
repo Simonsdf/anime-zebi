@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="style.css" />
+			<title>Anime</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		</head>
+		
+		<body>
+		  <header id="container">
+	<nav class="navbar">
+	<a href="index.html" class="index_html"><img src="images/logo.png" alt="logo de la page"/></a>
+	<div class="nav-links">
+		<ul>
+			<li><a id="index" class="pagecourante" href="index.html">Accueil</a></li>
+			<li><a id="catégories" href="Catégories.html">Catégories</a></li>
+			<li><a id="blog" href="Blog.html">Blog</a></li>
+			<li><a id="contact" href="Contact.html">Contact</a></li>
+			<li><a id="connexion" href="Connexion.html">Connexion</a></li>
+	  </ul>
+	</div>
+	</nav>
+	</header>
+			
+			  <img class="breadcrumb" src="images/breadcrumb.jpg" alt="bannière de la page"/>
+			  <h1 id="détails_1">Tout sur votre manga !</h1>
+			  <button id="PRECEDENT" class="Lien_EP"><span class="icône-flèche-cercle-gauche"></span>PRECEDENT</button>
+        <button id="SUIVANT" class="Lien_EP">SUIVANT<span class="icône-flèche-cercle-droite"></span></button>
+			  <a class="Lien_EP" href="boruto_EP_225.html"><h4 class="dernier episode" id="D_episode"><span class="icon-arrow-circle-down"></span>DERNIER EPISODE</h4></a>
+			  
+		  <div>
+			  <select id="selection_LECTEUR">
+			    <option value="1">LECTEUR 1</option>
+			    <option value="2">LECTEUR 2</option>
+			  </select>
+      </div>
+      
+      
+      
+      
+      
+		  
+		  
+		  <div>
+		    <select id="selection_EP">
+		      <option value="1">Épisode 1</option>
+          <option value="2">Épisode 2</option>
+          <option value="3">Épisode 3</option>
+          <option value="4">Épisode 4</option>
+          <option value="5">Épisode 5</option>
+          <option value="6">Épisode 6</option>
+          <option value="7">Épisode 7</option>
+          <option value="8">Épisode 8</option>
+          <option value="9">Épisode 9</option>
+          <option value="10">Épisode 10</option>
+          <option value="11">Épisode 11</option>
+          <option value="12">Épisode 12</option>
+          <option value="13">Épisode 13</option>
+          <option value="14">Épisode 14</option>
+          <option value="15">Épisode 15</option>
+          <option value="16">Épisode 16</option>
+          <option value="17">Épisode 17</option>
+          <option value="18">Épisode 18</option>
+          <option value="19">Épisode 19</option>
+          <option value="20">Épisode 20</option>
+          <option value="21">Épisode 21</option>
+          <option value="22">Épisode 22</option>
+          <option value="23">Épisode 23</option>
+          <option value="24">Épisode 24</option>
+          <option value="25">Épisode 25</option>
+          <option value="26">Épisode 26</option>
+          <option value="27">Épisode 27</option>
+          <option value="28">Épisode 28</option>
+          <option value="29">Épisode 29</option>
+          <option value="30">Épisode 30</option>
+          <option value="31">Épisode 31</option>
+          <option value="32">Épisode 32</option>
+          <option value="33">Épisode 33</option>
+          <option value="34">Épisode 34</option>
+          <option value="35">Épisode 35</option>
+          <option value="36">Épisode 36</option>
+          <option value="37">Épisode 37</option>
+          <option value="38">Épisode 38</option>
+          <option value="39">Épisode 39</option>
+          <option value="40">Épisode 40</option>
+          <option value="41">Épisode 41</option>
+          <option value="42">Épisode 42</option>
+          <option value="43">Épisode 43</option>
+          <option value="44">Épisode 44</option>
+          <option value="45">Épisode 45</option>
+          <option value="46">Épisode 46</option>
+          <option value="47">Épisode 47</option>
+          <option value="48">Épisode 48</option>
+          <option value="49">Épisode 49</option>
+          <option value="50">Épisode 50</option>
+          <option value="51">Épisode 51</option>
+          <option value="52">Épisode 52</option>
+          <option value="53">Épisode 53</option>
+          <option value="54">Épisode 54</option>
+          <option value="55">Épisode 55</option>
+          <option value="56">Épisode 56</option>
+          <option value="57">Épisode 57</option>
+          <option value="58">Épisode 58</option>
+          <option value="59">Épisode 59</option>
+          <option value="60">Épisode 60</option>
+		    </select>
+      </div>
+<div id="videoContainer">
+  <iframe id="video_EP" width="790" height="540" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" allowScriptAccess="always" mozallowfullscreen="true" allow="encrypted-media"></iframe>
+</div>
+
+<script>
+$(document).ready(function(){
+  var episodes = [
+    {
+      lecteur: '1',
+      videos: [
+    
+    'https://www.myvi.top/embed/gjkkygyteppw3f8psmqmbce9kw',
+    'https://www.myvi.top/embed/iff53cmhffqwdj714aswaefa9w',
+    'https://www.myvi.top/embed/3n1hxebnj8tw7y9n1hwrqn54ha',
+    'https://www.myvi.top/embed/k3m4unxq9uhrzr5tkuna9oeyqo',
+    'https://www.myvi.top/embed/6jkdmn5armmrim33drc83sxdxy',
+    'https://www.myvi.top/embed/dayppyw1jg1rxx3gekdqdzaehy',
+    'https://www.myvi.top/embed/87wuh51hbtrwbjok4i34411pbe',
+    'https://www.myvi.top/embed/ryp1uhwitpdruksw745r58gmje',
+    'https://www.myvi.top/embed/8tbsjx49i7wr7mj8cbxqdbtc8y',
+    'https://www.myvi.top/embed/eb6yiy8uct6r3gcuawgo51cjbe',
+    'https://www.myvi.top/embed/uupo51a5iq3w3fabnhp6qwsnzw',
+    'https://www.myvi.top/embed/gzwxaomi1u8r5g6i9fpw9if3re',
+    'https://www.myvi.top/embed/y1p7jxpd89prmfiyumga4wnabw',
+    'https://www.myvi.top/embed/nk486uhrf5jwzxti37qmbnc9pe',
+    'https://www.myvi.top/embed/rijfrp3wqe5w7f75syfhxbdhrw',
+    'https://www.myvi.top/embed/qsunnn5k5dnw7ph43gg7f58n8e',
+    'https://www.myvi.top/embed/x9aspyg8khkw3nta8bwzyzdwih',
+    'https://www.myvi.top/embed/hniawybnnjyw7ke131tzy4a76y',
+    'https://www.myvi.top/embed/1d9fekbyby7wum85i3okk7spch',
+    'https://www.myvi.top/embed/yf5r54ay6pkw7c3e8bfkf8myxh',
+    'https://www.myvi.top/embed/dgfn8e4r7h3r9r1oo5t9dsqdnw',
+    'https://www.myvi.tv/embed/k6dw7aicwturjkd7f7r11qtgta',
+    'https://www.myvi.tv/embed/sww76tkda65w8cbxsf8c46y7kh',
+    'https://www.myvi.tv/embed/5opu5y9gspnr5x43b9ozosh8hc',
+    'https://www.myvi.tv/embed/y4hucnuw1cqrugd1egburguugo',
+    'https://www.myvi.tv/embed/6waz68t5krjrurtr95wthqt3jo',
+    'https://www.myvi.tv/embed/tffmakwjrcjr3xy859hcws7ysy',
+    'https://www.myvi.tv/embed/asacmqkctp8wbbnzfy38tzeqke',
+    'https://www.myvi.tv/embed/t4o9htwjq6orzgwgjpeb7jsyfo',
+    'https://www.myvi.tv/embed/n5akgyuftakwbrspsa1gug19ta',
+    'https://www.myvi.tv/embed/7psnz7xoz65rzgumy8e9c1w1zy',
+    'https://www.myvi.tv/embed/dtnkxbqiu4hrddubura8kieb7e',
+    'https://www.myvi.tv/embed/qm186863i5hw5fpz9grbzedh5y',
+    'https://www.myvi.tv/embed/oxf34oywt1urxgik6drnabc7or',
+    'https://www.myvi.tv/embed/aoiccyi5zrzwipjardrct3axoc',
+    'https://www.myvi.tv/embed/4iurerjudpjrzdxwepsrj3s5my',
+    'https://www.myvi.tv/embed/rd8qzd96n4xw8p9ckmn5e9dhph',
+    'https://www.myvi.tv/embed/xucfa7dike3r8narjdxexnm87w',
+    'https://www.myvi.tv/embed/qcwtxiz4p8frz8ohxpj5wkqx4o',
+    'https://www.myvi.tv/embed/ykib4ecow37w5cu8oe1nj5ij3e',
+    'https://www.myvi.tv/embed/jw5pa6b5kijrz8jyire3ku435h',
+    'https://www.myvi.tv/embed/fhgpgxukufdwz84jhx7aichdba',
+    'https://www.myvi.tv/embed/h65jjuwn3gnruecd31494z66hw',
+    'https://www.myvi.tv/embed/xe51y5mpw7kr5pforrt581jtmo',
+    'https://www.myvi.tv/embed/rrbnejyqhixwxqc581qjw6o3cy',
+    'https://www.myvi.tv/embed/i6dt674ndoerfgr1shz4abbu6o',
+    'https://www.myvi.tv/embed/z9h41ckm17zrfdh441njbtdfxc',
+    'https://www.myvi.tv/embed/j47e4y8633xr38ap41e1owma6h',
+    'https://www.myvi.tv/embed/idqos9zswyzrpbqjruu1h3kprw',
+    'https://www.myvi.tv/embed/fxbgwa9mh19wjpmzys9w5w5jra',
+    'https://www.myvi.tv/embed/6kojhcbqfb4wmje36h7xj9mo5r',
+    'https://www.myvi.tv/embed/jj9f39gkuk7wtqjg3o8c9a141h',
+    'https://www.myvi.tv/embed/dprsc6t5dxzwmfy73j7dpgp8wy',
+    'https://www.myvi.tv/embed/pydfp73ngigwu8ybcz5qdfo8gh',
+    'https://www.myvi.tv/embed/pcwbjctmkabrdy6upm35n37w6y',
+    'https://www.myvi.tv/embed/whmka37fcsqw5k9suz4gim4gpy',
+    'https://www.myvi.tv/embed/4tbmgb8gefnrdxxensa8k5dbmr',
+    'https://www.myvi.tv/embed/biaoa4zqukqrpd8ger6r31z4gr',
+    'https://www.myvi.tv/embed/86m5gozfknxr3nz6ducg8edk6y',
+    'https://www.myvi.tv/embed/nbxmtoafeqmr8fq4f8ixhp8ynw',
+    
+      ]
+    },
+    {
+      lecteur: '2',
+      videos: [
+        'https://sendvid.com/embed/lxnup2sw',
+        'https://sendvid.com/embed/wd90hcxi',
+        'https://sendvid.com/embed/d45wpr5w',
+        'https://sendvid.com/embed/14zvg6e3',
+        'https://sendvid.com/embed/azp6asul',
+        'https://sendvid.com/embed/vxnzjkeb',
+        'https://sendvid.com/embed/z7xaxaha',
+        'https://sendvid.com/embed/4hn1pg52',
+        'https://sendvid.com/embed/wy2uf5us',
+        'https://sendvid.com/embed/sbgly68e',
+        'https://sendvid.com/embed/9vc0ad5c',
+        'https://sendvid.com/embed/gezhplor',
+        'https://sendvid.com/embed/yzqndsgv',
+        'https://sendvid.com/embed/eooa0j35',
+        'https://sendvid.com/embed/pvei9be1',
+        'https://sendvid.com/embed/gg5km1qh',
+        'https://sendvid.com/embed/2zypf6aa',
+        'https://sendvid.com/embed/cwmaa2d4',
+        'https://sendvid.com/embed/uv885u2h',
+        'https://sendvid.com/embed/3q2x9bvh',
+        'https://sendvid.com/embed/aca0dasf',
+        'https://video.sibnet.ru/shell.php?videoid=4742084',
+        'https://video.sibnet.ru/shell.php?videoid=4742086',
+        'https://video.sibnet.ru/shell.php?videoid=4742087',
+        'https://video.sibnet.ru/shell.php?videoid=4742089',
+        'https://video.sibnet.ru/shell.php?videoid=4880220',
+        'https://video.sibnet.ru/shell.php?videoid=4880209',
+        'https://video.sibnet.ru/shell.php?videoid=4880225',
+        'https://video.sibnet.ru/shell.php?videoid=4883797',
+        'https://video.sibnet.ru/shell.php?videoid=4883798',
+        'https://video.sibnet.ru/shell.php?videoid=4883799',
+        'https://video.sibnet.ru/shell.php?videoid=4883801',
+        'https://video.sibnet.ru/shell.php?videoid=4883802',
+        'https://video.sibnet.ru/shell.php?videoid=4883803',
+        'https://video.sibnet.ru/shell.php?videoid=4901922',
+        'https://video.sibnet.ru/shell.php?videoid=4901923',
+        'https://video.sibnet.ru/shell.php?videoid=4903000',
+        'https://video.sibnet.ru/shell.php?videoid=4901927',
+        'https://video.sibnet.ru/shell.php?videoid=4901928',
+        'https://video.sibnet.ru/shell.php?videoid=4901929',
+        'https://video.sibnet.ru/shell.php?videoid=4901930',
+        'https://video.sibnet.ru/shell.php?videoid=4901932',
+        'https://video.sibnet.ru/shell.php?videoid=4901934',
+        'https://video.sibnet.ru/shell.php?videoid=4907312',
+        'https://video.sibnet.ru/shell.php?videoid=4907313',
+        'https://video.sibnet.ru/shell.php?videoid=4907314',
+        'https://video.sibnet.ru/shell.php?videoid=4907317',
+        'https://video.sibnet.ru/shell.php?videoid=4948014',
+        'https://video.sibnet.ru/shell.php?videoid=4948015',
+        'https://video.sibnet.ru/shell.php?videoid=4948017',
+        'https://video.sibnet.ru/shell.php?videoid=4948018',
+        'https://video.sibnet.ru/shell.php?videoid=4948022',
+        'https://video.sibnet.ru/shell.php?videoid=4979227',
+        'https://video.sibnet.ru/shell.php?videoid=4979228',
+        'https://video.sibnet.ru/shell.php?videoid=4979229',
+        'https://video.sibnet.ru/shell.php?videoid=4979230',
+        'https://video.sibnet.ru/shell.php?videoid=4979231',
+        'https://video.sibnet.ru/shell.php?videoid=4979232',
+        'https://video.sibnet.ru/shell.php?videoid=4979233',
+        'https://video.sibnet.ru/shell.php?videoid=4979234',
+      ]
+    }
+    // Ajoutez d'autres lecteurs et leurs vidéos ici
+  ];
+  
+  var currentEpisode = 1;
+
+  function updateVideo() {
+    var episode = $('#selection_EP').val();
+    var lecteur = $('#selection_LECTEUR').val();
+    
+    if (episode && lecteur) {
+      var videoLink = episodes.find(function(ep) {
+        return ep.lecteur === lecteur;
+      }).videos[episode - 1];
+      
+      if (videoLink) {
+        $('#video_EP').attr('src', videoLink);
+      }
+      else {
+        $('#videoContainer').html('Lecteur ou épisode non valide.');
+      }
+    }
+  }
+
+  $('#selection_EP, #selection_LECTEUR').change(function(){
+    updateVideo();
+  });
+
+  $('#PRECEDENT').click(function() {
+    if (currentEpisode > 1) {
+      currentEpisode--;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  $('#SUIVANT').click(function() {
+    var totalEpisodes = $('#selection_EP option').length;
+    if (currentEpisode < totalEpisodes) {
+      currentEpisode++;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  // Code pour charger la première vidéo par défaut
+  var defaultEpisode = '1';
+  var defaultLecteur = '1';
+
+  $('#selection_EP').val(defaultEpisode);
+  $('#selection_LECTEUR').val(defaultLecteur);
+  updateVideo();
+});
+</script>
+
+
+		  
+        
+        <p id="phrase_grise">Un problème sur les vidéos ? Changez de lecteur (sinon consultez <a id="lien_bleu" href="lien_page.html">la page aide</a> ).</p>
+        <p id="Dernier_EP_S">Dernier épisode selectionné: épisode 1</p>
+        <h1 id="Boruto_détails">Boruto</h1>
+        <h2 id="avec_fillers">SANS FILLERS</h2>
+        <img id="drapeau_france" src="images/France.png" alt="drapeau france"/>
+        <h3 id="VF">VF</h3>
+        
+         <footer id="footer_EP">
+		      <div>
+			      <ul class="menu_footer">
+				      <li><a href="index.html">Accueil</a></li>
+				      <li><a href="Catégories.html">Catégories</a></li>
+				      <li><a href="Blog.html">Blog</a></li>
+				      <li><a href="Contact.html">Contact</a></li>
+				      <li><a href="Connexion.html">Connexion</a></li>
+	          </ul>
+          </div>
+
+
+          
+        
+      
+	        <a href="index.html"><h1 class="icon-expand_less" ></h1></a>
+	  
+	        <a class="logo_footer" href="index.html"><img src="images/logo.png" alt="logo de la page"/></a>
+		
+		    </footer>
+		    
+		</body>
+	</html>

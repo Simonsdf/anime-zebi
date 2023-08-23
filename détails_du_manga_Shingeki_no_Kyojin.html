@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+        <title>Anime</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+      <body>
+        <header id="container">
+	<nav class="navbar">
+	<a href="index.html" class="index_html"><img src="images/logo.png" alt="logo de la page"/></a>
+	<div class="nav-links">
+		<ul>
+			<li><a id="index" class="pagecourante" href="index.html">Accueil</a></li>
+			<li><a id="catégories" href="Catégories.html">Catégories</a></li>
+			<li><a id="blog" href="Blog.html">Blog</a></li>
+			<li><a id="contact" href="Contact.html">Contact</a></li>
+			<li><a id="connexion" href="Connexion.html">Connexion</a></li>
+	  </ul>
+	</div>
+	</nav>
+	</header>
+			
+			  <img class="breadcrumb" src="images/breadcrumb.jpg" alt="bannière de la page"/>
+			  <h1 id="détails_1">Tout sur votre manga !</h1>
+				 <img class="image_détails" src="images/trend-3.jpg" alt="Photo du manga "/>
+				<h2 id="titre_détails">made in abyss</h2>
+          
+				    <p class="auteur_détails">Akihito Tsukushi</p>
+            <p class="votes_détails">1.029 Votes</p>
+            <p id="description_détails">Résumé:  Riko, jeune orpheline, a grandi dans une petite ville située au bord du<br/>
+			gouffre tout en rêvant de devenir exploratrice, comme sa mère. Un jour, alors qu'elle explore le premier<br/>
+			niveau de l'Abyss, elle rencontre un étrange robot qui ressemble à s'y méprendre à un être humain.</p>
+			
+            <p class="serie_détails">Type: Film</p>
+				    <p class="studio_détails">Studios: Wit Studio</p>
+				    <p class="date_détails">Date de diffusion: 28 Avril 2019</p>
+				    <p class="genre_détails">Action, Drame, Fantastique, Horreur, Mystère</p>
+				    <p class="score_détails">18/18</p>
+
+          <ul class="détails_1">
+				    <li class="Type_détails">Type: </li>
+				    <li class="Studios_détails">Studios:</li>
+				    <li class="Diffusion_détails">Diffusion: </li>
+				    <li class="Genre_détails">Genre: 	</li>
+				    <li class="Score_détails">Score: </li>
+				  </ul>
+				  
+				 <p class="temps_détails">24 min/ep</p>
+				 <p class="qualité_détails">HD</p>
+				 <p class="vues_détails">9141 vues</p>
+				 
+				  <ul class="détails_2">
+				    <li class="détails_Votes">Votes: </li>
+				    <li class="détails_durée">Durée: </li>
+				    <li class="détails_Qualité">Qualité: </li>
+				    <li class="détails_vues">Vues: </li>
+          </ul>
+          
+          <p id="commentaires_détails" class="icon-comments">11</p>
+          <p id="vues_détails" class="icon-eye">1541</p>
+          <h1 class="icon-star_border"></h1>
+          <h1 class="icon-star_half"></h1>
+          <h1 class="icon-star_1"></h1>
+          <h1 class="icon-star_2"></h1>
+          <h1 class="icon-star_3"></h1>
+          <h1 id="Anime">Anime</h1>
+          <h1 id="Manga">Manga</h1>
+        
+        
+          <a href="Made_in_abyss_ep.html"><img id="saison_1" class="image_filtres" src="images/made_in_abyss_petit.jpeg" alt="saison 2"/><h1 id="Saison_1_L" class="image_filtres_Lettre">Saison 1</h1></a>
+          <a href="Made_in_abyss_film.html"><img id="saison_2" class="image_filtres" src="images/made_in_abyss_petit.jpeg" alt="saison 2"/><h1 id="Saison_2_L" class="image_filtres_Lettre">Film</h1></a>
+          <a href="Made_in_abyss_S2.html"><img id="saison_3" class="image_filtres" src="images/made_in_abyss_petit.jpeg" alt="saison 3"/><h1 id="Saison_3_L" class="image_filtres_Lettre">Saison 2</h1></a>
+          <a href="Made_in_abyss_scans.html"><img id="Image_Scans" class="image_filtres" src="images/made_in_abyss_scans.jpeg" alt="image scans"/><h1 id="Scans_L" class="image_filtres_Lettre">Scans</h1></a>
+
+        
+          <script>
+            var imageFiltres = document.querySelectorAll('.image_filtres');
+            var imageFiltresLettres = document.querySelectorAll('.image_filtres_Lettre');
+          
+            imageFiltres.forEach(function(image) {
+              image.addEventListener('mouseover', function() {
+                image.style.filter = 'brightness(0.5)';
+                var lettre = this.nextElementSibling;
+                lettre.style.color = 'gray';
+              });
+          
+              image.addEventListener('mouseout', function() {
+                image.style.filter = 'brightness(1)';
+                var lettre = this.nextElementSibling;
+                lettre.style.color = 'white';
+              });
+            });
+          
+            imageFiltresLettres.forEach(function(lettre) {
+              lettre.addEventListener('mouseover', function() {
+                var image = this.previousElementSibling;
+                image.style.filter = 'brightness(0.5)';
+                this.style.color = 'gray';
+              });
+          
+              lettre.addEventListener('mouseout', function() {
+                var image = this.previousElementSibling;
+                image.style.filter = 'brightness(1)';
+                this.style.color = 'white';
+              });
+            });
+          </script>
+          
+          
+
+      <footer id="footer_détails">
+		      <div>
+			      <ul class="menu_footer">
+				      <li><a href="index.html">Accueil</a></li>
+				      <li><a href="Catégories.html">Catégories</a></li>
+				      <li><a href="Blog.html">Blog</a></li>
+				      <li><a href="Contact.html">Contact</a></li>
+				      <li><a href="Connexion.html">Connexion</a></li>
+	          </ul>
+          </div>
+      
+	        <a href="index.html"><h1 class="icon-expand_less" ></h1></a>
+	        <a class="logo_footer" href="index.html"><img src="images/logo.png" alt="logo de la page"/></a>
+		    </footer>
+      
+		  </body>
+</html>

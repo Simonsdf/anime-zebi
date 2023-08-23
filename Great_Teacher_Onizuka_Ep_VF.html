@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="style.css" />
+			<title>Anime</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		</head>
+		
+		<body>
+		  <header id="container">
+	<nav class="navbar">
+	<a href="index.html" class="index_html"><img src="images/logo.png" alt="logo de la page"/></a>
+	<div class="nav-links">
+		<ul>
+			<li><a id="index" class="pagecourante" href="index.html">Accueil</a></li>
+			<li><a id="catégories" href="Catégories.html">Catégories</a></li>
+			<li><a id="blog" href="Blog.html">Blog</a></li>
+			<li><a id="contact" href="Contact.html">Contact</a></li>
+			<li><a id="connexion" href="Connexion.html">Connexion</a></li>
+	  </ul>
+	</div>
+	</nav>
+	</header>
+			
+			  <img class="breadcrumb" src="images/breadcrumb.jpg" alt="bannière de la page"/>
+			  <h1 id="détails_1">Tout sur votre manga !</h1>
+			  <button id="PRECEDENT" class="Lien_EP"><span class="icône-flèche-cercle-gauche"></span>PRECEDENT</button>
+        <button id="SUIVANT" class="Lien_EP">SUIVANT<span class="icône-flèche-cercle-droite"></span></button>
+			  <a class="Lien_EP" href="boruto_EP_225.html"><h4 class="dernier episode" id="D_episode"><span class="icon-arrow-circle-down"></span>DERNIER EPISODE</h4></a>
+			  
+		  <div>
+			  <select id="selection_LECTEUR" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+			    <option>LECTEUR 1</option>
+		      <option>LECTEUR 2</option>
+		      <option>LECTEUR 3</option>
+			  </select>
+      </div>
+      
+      
+      
+      
+      
+		  
+		  
+		  <div>
+		    <select id="selection_EP"></select>
+      </div>
+<div id="videoContainer">
+  <iframe id="video_EP" width="790" height="540" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" allowScriptAccess="always" mozallowfullscreen="true" allow="encrypted-media"></iframe>
+</div>
+
+<script>
+$(document).ready(function(){
+  var videoLinks = [
+    'https://cvs12-2.sibnet.ru/44/66/00/4466005.mp4?st=jHqwDGdr2rFjnMMmjOgRog&e=1684789000&stor=9&noip=1',
+    'https://cvs120-1.sibnet.ru/40/43/31/4043317.mp4?st=GvqMf2Tjv9fSazGneBkUAw&e=1684789000&stor=51&noip=1',
+    'https://cvs117-1.sibnet.ru/40/43/31/4043318.mp4?st=u5ESM4_cFG67t6YJ8WEUZA&e=1684790000&stor=51&noip=1',
+    'https://cvs111-2.sibnet.ru/40/43/32/4043320.mp4?st=thmQc0VKJQCjjZH3gfBEaQ&e=1684790000&stor=51&noip=1',
+    'https://cvs111-2.sibnet.ru/40/43/32/4043321.mp4?st=PSUCwn_25DZb_ogd5jpACw&e=1684790000&stor=51&noip=1',
+    'https://cvs120-1.sibnet.ru/40/43/32/4043324.mp4?st=RlEJ4LTd0DBhaKesolWjKw&e=1684790000&stor=51&noip=1',
+    'https://cvs120-1.sibnet.ru/40/43/32/4043325.mp4?st=was14Vu1zqCwT9uRX0f0HQ&e=1684790000&stor=51&noip=1',
+    'https://cvs111-2.sibnet.ru/40/43/32/4043326.mp4?st=HJqqy1bGp3bDyDBLEnO2kA&e=1684790000&stor=51&noip=1',
+    'https://cvs120-1.sibnet.ru/40/43/32/4043327.mp4?st=uOpteMXsY1cSPwuV5m5BuA&e=1684790000&stor=51&noip=1',
+    'https://fs91.myvi.tv:8092/vH/2X/Ip/Oy/QE/O6/sw/Hv/s0/TV/Dw/2/2.mp4?&s=jZ5RzAMf13g3qeWXt2LYk175Hbyjmt9KaQa-uPZQ5k1kNxW2V2Q2I6ekKheKmA3JkRj6sbmw9A7z0HxtXkPtsg2&r=uM_VhJW1BnZUdTIr5F0HkV8IPdRij0np4a4QEg9bXzE1&do=1545&d=1391&ri=X03PkXyhC0CPRmjA8ybHlg2',
+    'https://sendvid.com/embed/rflf5ujy',
+'https://sendvid.com/embed/3l89pgv0',
+'https://sendvid.com/embed/vldjc9zk',
+'https://sendvid.com/embed/mjvvrihe',
+'https://sendvid.com/embed/d8gvj3l0',
+'https://sendvid.com/embed/oljr7bpa',
+'https://sendvid.com/embed/q965sprt',
+'https://sendvid.com/embed/aobigmk3',
+'https://sendvid.com/embed/h9hqgdmn',
+'https://sendvid.com/embed/n0prh3ip',
+'https://sendvid.com/embed/pgi26n9p',
+'https://sendvid.com/embed/0f6t6yci',
+'https://sendvid.com/embed/yt85t4u6',
+'https://sendvid.com/embed/5vk291v3',
+'https://sendvid.com/embed/2fq4ki91',
+'https://sendvid.com/embed/l0c9s5vf',
+'https://sendvid.com/embed/ji0b9uz4',
+'https://sendvid.com/embed/b8zea8yp',
+'https://sendvid.com/embed/n4meywrs',
+'https://sendvid.com/embed/rhvfouui',
+'https://sendvid.com/embed/y8sfkksy',
+'https://sendvid.com/embed/cszhho0t',
+'https://sendvid.com/embed/f6wznt4f',
+'https://sendvid.com/embed/t8rtughx',
+'https://sendvid.com/embed/pnm5dkae',
+'https://sendvid.com/embed/na83bknc',
+'https://sendvid.com/embed/gc6wdmuu',
+'https://sendvid.com/embed/qgr07xx3',
+'https://sendvid.com/embed/rvjvewrj',
+'https://sendvid.com/embed/3irpm9q2',
+'https://sendvid.com/embed/vwj71oxo',
+'https://sendvid.com/embed/ka4heni9'
+    
+  
+  ];
+  
+  var currentIndex = 0;
+  
+  function changeVideoLink() {
+    var videoLink = videoLinks[currentIndex];
+    $('#video_EP').attr('src', videoLink);
+  }
+  
+  function updateEpisodeSelect() {
+    $('#selection_EP').empty();
+    for (var i = 0; i < videoLinks.length; i++) {
+      var episodeOption = $('<option>').attr('value', i).text('Épisode ' + (i + 1));
+      $('#selection_EP').append(episodeOption);
+    }
+    $('#selection_EP').val(currentIndex);
+  }
+  
+  $('#SUIVANT').click(function(){
+    currentIndex = (currentIndex + 1) % videoLinks.length;
+    changeVideoLink();
+    updateEpisodeSelect();
+  });
+  
+  $('#PRECEDENT').click(function(){
+    if (currentIndex > 0) {
+      currentIndex = (currentIndex - 1) % videoLinks.length;
+      changeVideoLink();
+      updateEpisodeSelect();
+    }
+  });
+  
+  $('#selection_EP').change(function(){
+    currentIndex = parseInt($(this).val());
+    changeVideoLink();
+  });
+  
+  // Initial setup
+  changeVideoLink();
+  updateEpisodeSelect();
+});
+</script>
+
+
+		  
+        
+        <p id="phrase_grise">Un problème sur les vidéos ? Changez de lecteur (sinon consultez <a id="lien_bleu" href="lien_page.html">la page aide</a> ).</p>
+        <p id="Dernier_EP_S">Dernier épisode selectionné: épisode 1</p>
+        <h1 id="Boruto_détails">Great Teacher Onizuka</h1>
+        <h2 id="avec_fillers">AVEC FILLERS</h2>
+        <img id="drapeau_france" src="images/France.png" alt="drapeau france"/>
+        <h3 id="VF">VF</h3>
+        
+         <footer id="footer_EP">
+		      <div>
+			      <ul class="menu_footer">
+				      <li><a href="index.html">Accueil</a></li>
+				      <li><a href="Catégories.html">Catégories</a></li>
+				      <li><a href="Blog.html">Blog</a></li>
+				      <li><a href="Contact.html">Contact</a></li>
+				      <li><a href="Connexion.html">Connexion</a></li>
+	          </ul>
+          </div>
+
+
+          
+        
+      
+	        <a href="index.html"><h1 class="icon-expand_less" ></h1></a>
+	  
+	        <a class="logo_footer" href="index.html"><img src="images/logo.png" alt="logo de la page"/></a>
+		
+		    </footer>
+		    
+		</body>
+	</html>

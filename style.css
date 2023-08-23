@@ -1,0 +1,2881 @@
+@font-face {
+  font-family: 'oswald';
+  src:  url('fonts/oswald-v49-latin-regular.eot');
+  src:  url('fonts/oswald-v49-latin-regular.eot#iefix') format('embedded-opentype'),
+        url('fonts/oswald-v49-latin-regular.woff2') format('woff2'),
+        url('fonts/oswald-v49-latin-regular.woff') format('woff'),
+        url('fonts/oswald-v49-latin-regular.ttf') format('truetype'),
+        url('fonts/oswald-v49-latin-regular.svg#oswald') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mulish';
+  src:  url('fonts/mulish-v12-latin-regular.eot');
+  src:  url('fonts/mulish-v12-latin-regular.eot#iefix') format('embedded-opentype'),
+        url('fonts/mulish-v12-latin-regular.woff2') format('woff2'),
+        url('fonts/mulish-v12-latin-regular.woff') format('woff'),
+        url('fonts/mulish-v12-latin-regular.ttf') format('truetype'),
+        url('fonts/mulish-v12-latin-regular.svg#mulish') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?10si43');
+  src:  url('fonts/icomoon.eot?10si43#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?10si43') format('truetype'),
+    url('fonts/icomoon.woff?10si43') format('woff'),
+    url('fonts/icomoon.svg?10si43#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+div{
+text-align: center;
+}
+
+
+/* Slide section */
+
+.slides-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider{
+  width: 1134px;
+  height: 500px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+  
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  
+}
+
+.first{
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    background: url('./images/hero-1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.second{
+    background: url('./images/naruto_banner.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center
+}
+.third{
+    background: url('./images/Goku_banner.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center
+}
+
+@keyframes slide {
+    0%{
+        margin-left: 0;
+    }
+    16%{
+        margin-left: 0;
+    }
+    32%{
+        margin-left: -20%;
+    }
+    48%{
+        margin-left: -20%;
+    }
+    64%{
+        margin-left: -40%;
+    }
+    80%{
+        margin-left: -40%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+/* Slide section */
+
+
+#Phrase_V_KAI {
+  position:absolute;
+  top: 1520px;
+  left:50px;
+  color: #b5b5b5;
+}
+
+#Phrase_V_KAI_2 {
+  position:absolute;
+  top: 1540px;
+  left:50px;
+  color: #b5b5b5;
+}
+
+  .image_filtres {
+    filter: brightness(1);
+    transition: filter 0.3s ease;
+  }
+
+  .image_filtres_Lettre {
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .image_filtres:hover {
+    filter: brightness(0.5);
+  }
+
+  .image_filtres:hover + .image_filtres_Lettre,
+  .image_filtres_Lettre:hover {
+    color: gray;
+  }
+  
+#Kai_One_Piece {
+  position:absolute;
+  top: 1460px;
+  left:50px;
+  padding-bottom:5px;
+  border-bottom: 2px  solid #828282 ;
+  padding-right: 966px;
+}
+  
+
+
+#Anime {
+  position:absolute;
+  top: 800px;
+  left:50px;
+  padding-bottom:5px;
+  border-bottom: 2px  solid #828282 ;
+  padding-right: 800px;
+}
+
+#Anime_Long {
+  position:absolute;
+  top: 800px;
+  left:50px;
+  padding-bottom:5px;
+  border-bottom: 2px  solid #828282 ;
+  padding-right: 1100px;
+}
+
+
+#Manga {
+  position:absolute;
+  top: 1110px;
+  left:50px;
+  padding-bottom:5px;
+  border-bottom: 2px  solid #828282 ;
+  padding-right: 800px;
+}
+
+#Manga_DS {
+  position:absolute;
+  top: 1300px;
+  left:50px;
+  padding-bottom:5px;
+  border-bottom: 2px  solid #828282 ;
+  padding-right: 800px;
+}
+
+#Manga_One_Piece {
+  position:absolute;
+  top: 1800px;
+  left:50px;
+  padding-bottom:5px;
+  border-bottom: 2px  solid #828282 ;
+  padding-right: 800px;
+}
+
+
+#Avec_Fillers {
+  position:absolute;
+  top: 938px;
+  left:112px;
+  color: #f5f5f5;
+}
+
+#Sans_Fillers {
+  position:absolute;
+  top: 938px;
+  left:417px;
+  color:#f5f5f5;
+}
+
+#saison_1 {
+  position:absolute;
+  top: 910px;
+  left:50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_1_L {
+  position:absolute;
+  top: 938px;
+  left:128px;
+  color: #f5f5f5;
+}
+
+#Films {
+  position:absolute;
+  top: 938px;
+  left:750px;
+  color: #f5f5f5;
+}
+
+#Kai {
+  position:absolute;
+  top: 1248px;
+  left:156px;
+  color: #f5f5f5;
+}
+
+
+
+#saison_2 {
+  position:absolute;
+  top: 910px;
+  left:350px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_2_L {
+  position:absolute;
+  top: 938px;
+  left:448px;
+  color:#f5f5f5;
+}
+
+#saison_3 {
+  position:absolute;
+  top: 910px;
+  left:650px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+
+#Saison_3_L {
+  position:absolute;
+  top: 938px;
+  left:728px;
+  color: #f5f5f5;
+}
+
+#Saison_3_L_DS {
+  position:absolute;
+  top: 938px;
+  left:700px;
+  color: #f5f5f5;
+}
+
+#saison_4 {
+  position:absolute;
+  top: 910px;
+  left:950px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_1_L_ONE_P {
+  position:absolute;
+  top: 938px;
+  left:75px;
+  color: #f5f5f5;
+}
+
+#Saison_2_L_ONE_P {
+  position:absolute;
+  top: 938px;
+  left:378px;
+  color:#f5f5f5;
+}
+
+#Saison_3_L_ONE_P {
+  position:absolute;
+  top: 915px;
+  left:740px;
+  color: #f5f5f5;
+}
+
+#Ile_Céleste {
+  position:absolute;
+  top: 955px;
+  left:710px;
+  color: #f5f5f5;
+}
+
+#Water_Seven {
+  position:absolute;
+  top: 955px;
+  left:1005px;
+  color: #f5f5f5;
+}
+
+
+
+#Saison_4_L_ONE_P {
+  position:absolute;
+  top: 915px;
+  left:1048px;
+  color: #f5f5f5;
+}
+
+#Saison_4_L {
+  position:absolute;
+  top: 935px;
+  left:1040px;
+  color: #f5f5f5;
+}
+
+#saison_5 {
+  position:absolute;
+  top: 1090px;
+  left:50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_5_L_ONE_P {
+  position:absolute;
+  top: 1094px;
+  left:140px;
+  color: #f5f5f5;
+}
+
+#Saison_5_L_DS {
+  position:absolute;
+  top: 1118px;
+  left:130px;
+  color: #f5f5f5;
+}
+
+#Thriller_Bark {
+  position:absolute;
+  top: 1135px;
+  left:100px;
+  color: #f5f5f5;
+}
+
+#saison_6 {
+  position:absolute;
+  top: 1090px;
+  left: 350px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_6_L_ONE_P {
+  position:absolute;
+  top: 1113px;
+  left: 439px;
+  color: #f5f5f5;
+}
+
+#saison_7 {
+  position:absolute;
+  top: 1090px;
+  left: 650px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_7_L_ONE_P {
+  position:absolute;
+  top: 1113px;
+  left: 740px;
+  color: #f5f5f5;
+}
+
+#saison_8 {
+  position:absolute;
+  top: 1090px;
+  left: 950px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_8_L_ONE_P {
+  position:absolute;
+  top: 1113px;
+  left: 1048px;
+  color: #f5f5f5;
+}
+
+#saison_9 {
+  position:absolute;
+  top: 1270px;
+  left: 50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_9_L_ONE_P {
+  position:absolute;
+  top: 1292px;
+  left: 140px;
+  color: #f5f5f5;
+}
+
+#saison_10 {
+  position:absolute;
+  top: 1270px;
+  left: 350px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_10_L_ONE_P {
+  position:absolute;
+  top: 1292px;
+  left: 439px;
+  color: #f5f5f5;
+}
+
+#saison_11 {
+  position:absolute;
+  top: 1270px;
+  left: 650px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_11_L_ONE_P {
+  position:absolute;
+  top: 1292px;
+  left: 755px;
+  color: #f5f5f5;
+}
+
+#saison_12 {
+  position:absolute;
+  top: 1615px;
+  left: 50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_12_L_ONE_P {
+  position:absolute;
+  top: 1645px;
+  left: 96px;
+  color: #f5f5f5;
+}
+
+#saison_13 {
+  position:absolute;
+  top: 1915px;
+  left: 50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_13_L_ONE_P {
+  position:absolute;
+  top: 1940px;
+  left: 92px;
+  color: #f5f5f5;
+}
+
+#saison_14 {
+  position:absolute;
+  top: 1915px;
+  left: 350px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Saison_14_L_ONE_P {
+  position:absolute;
+  top: 1940px;
+  left: 360px;
+  color: #f5f5f5;
+}
+
+
+#Image_Scans {
+  position:absolute;
+  top: 1220px;
+  left:50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Image_Scans_DS {
+  position:absolute;
+  top: 1413px;
+  left:50px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Image_Scans_DS_2 {
+  position:absolute;
+  top: 1413px;
+  left: 350px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Image_Scans_DS_3 {
+  position:absolute;
+  top: 1413px;
+  left:650px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+#Scans_L_DS {
+  position:absolute;
+  top: 1438px;
+  left:145px;
+  color: #f5f5f5;
+}
+
+#Scans_L_DS_2 {
+  position:absolute;
+  top: 1438px;
+  left:433px;
+  color: #f5f5f5;
+}
+
+#Scans_L_DS_3 {
+  position:absolute;
+  top: 1438px;
+  left: 733px;
+  color: #f5f5f5;
+}
+
+
+#Scans_L {
+  position:absolute;
+  top: 1248px;
+  left:140px;
+  color: #f5f5f5;
+}
+
+ 
+
+#Image_Scans_2 {
+  position:absolute;
+  top: 1220px;
+  left:350px;
+  border-radius: 20px;
+  border:3px solid #0369a1;
+  width: 250px;
+  height: 140px;
+}
+
+
+#Scans_L_2 {
+  position:absolute;
+  top: 1248px;
+  left:440px;
+  color: #f5f5f5;
+}
+
+
+#selection_EP ul li a {
+  width: 150px;
+  height: 30px;
+  text-align:center;
+  border: 2px  solid #0369a1;
+}
+
+#selection_EP ul ul {
+  position:absolute;
+  top:30px;
+}
+
+div select option {
+    font-family: '',Impact, "Arial Black", Arial, Verdana ;
+    color:white;
+}
+
+div select {
+  font-family: '',Impact, "Arial Black", Arial, Verdana ;
+  color:white;
+}
+
+
+#selection_LECTEUR_NARUTO_SHIP {
+  position: absolute;
+  top: 480px;
+  left: 565px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+  cursor: pointer;
+}
+
+#selection_EP {
+  position: absolute;
+  top: 480px;
+  left: 287px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+  cursor: pointer;
+}
+
+
+#selection_EP:hover {
+  color: #d9d9d9;
+}
+
+#selection_LECTEUR:hover {
+  color: #d9d9d9;
+}
+
+#selection_LECTEUR {
+  position: absolute;
+  top: 480px;
+  left: 443px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+  cursor: pointer;
+}
+
+#selection_LECTEUR_film {
+  position: absolute;
+  top: 480px;
+  left: 615px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+  cursor: pointer;
+}
+
+#selection_LECTEUR_One_Piece {
+  position: absolute;
+  top: 480px;
+  left: 520px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid #0369a1;
+}
+
+
+
+#play {
+    padding-right: 10px;
+}
+
+.Lien_EP:hover {
+  color: #d9d9d9;
+}
+
+#selection_LECTEUR_One_Piece:hover {
+  color: #d9d9d9;
+}
+
+.Lien_EP {
+  color: white;
+}
+
+.episode_boruto {
+  position: absolute;
+  top:740px;
+  left:75px;
+  background: #e53637 ;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.episode_boruto:hover {
+  background: #d44648;
+}
+
+#D_episode {
+  position: absolute;
+  top: 595px;
+  left: 570px;
+  background: #121212;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid grey;
+}
+
+#PRECEDENT {
+  position: absolute;
+  top: 617px;
+  left: 390px;
+  background: #215182;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid grey;
+  font-size: 16px;
+}
+
+#PRECEDENT:hover {
+  background:#1a426b;
+  cursor: pointer;
+}
+
+#SUIVANT {
+  position: absolute;
+  top: 617px;
+  left: 787px;
+  background: #215182;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  border: 2px  solid grey;
+  font-size: 16px;
+}
+
+#SUIVANT:hover {
+  background:#1a426b;
+  cursor: pointer;
+}
+
+#phrase_grise {
+  color: grey;
+  position:absolute;
+  top: 540px;
+  left: 287px;
+}
+
+#lien_bleu {
+  color: #9090e8;
+}
+
+.suivant {
+  padding-right: 10px;
+}
+
+.icône-flèche-cercle-droite:before {
+   font-family: 'icomoon' !important; content:"\f0a9";
+   padding-left: 10px;
+}
+
+.icône-flèche-cercle-gauche:before {
+  font-family: 'icomoon' !important;content:"\f0a8";
+  padding-right: 10px;
+}
+
+.icon-arrow-circle-down:before {
+  padding-right: 10px;
+  font-family: 'icomoon' !important; content:"\f0ab";
+}
+
+
+h2 {
+  font-family: 'mulish',Impact, "Arial Black", Arial, Verdana ;
+}
+
+#Dernier_EP_S {
+  font-family: 'mulish',Impact, "Arial Black", Arial, Verdana ;
+  position: absolute;
+  top: 515px;
+  left: 287px;
+}
+
+
+#video_EP {
+  position:absolute;
+  top: 680px;
+  left: 287px;
+}
+
+#Boruto_détails {
+  position: absolute;
+  top: 335px;
+  left: 30px;
+}
+
+#avec_fillers {
+  color:#b6b6db;
+  position: absolute;
+  top: 380px;
+  left: 30px;
+}
+
+#drapeau_france {
+  border-radius: 10px;
+  width:60px;
+  height:40px;
+  position: absolute;
+  top: 436px;
+  left: 30px;
+  border: 2px  solid grey;
+
+}
+
+#VF {
+  color:#000000;
+  position: absolute;
+  top: 424px;
+  left: 49px;
+  font-family: '',Impact, "Arial Black", Arial, Verdana ;
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+
+#Tendance_du_jour_filtres {
+  border-left: 4px red solid;
+  padding-left: 5px;
+  margin-left: 50px;
+  position: absolute;
+  top: 390px;
+  left: 0px;
+}
+
+#titre_boruto_1_filtres {
+  position: absolute;
+  top: 820px;
+  left: 58px;
+}
+
+
+#titre_boruto_2_filtres {
+  position: absolute;
+  top: 850px;
+  left: 58px;
+}
+
+
+
+
+#cote_1_filtres {
+  position: absolute;
+  top:460px;
+  left:65px;
+}
+
+#cote_2_filtres {
+  position: absolute;
+  top:460px;
+  left: 390px;
+}
+
+#cote_3_filtres {
+  position: absolute;
+  top:460px;
+  left: 720px;
+}
+
+#cote_4_filtres {
+  position: absolute;
+  top:460px;
+  left: 1060px;
+}
+
+#cote_5_filtres {
+  position: absolute;
+  top: 970px;
+  left: 65px;
+}
+
+#cote_6_filtres {
+  position: absolute;
+  top:970px;
+  left: 390px;
+}
+
+#cote_7_filtres {
+  position: absolute;
+  top:970px;
+  left: 720px;
+}
+
+#cote_8_filtres {
+  position: absolute;
+  top:970px;
+  left: 1060px;
+}
+
+#cote_9_filtres {
+  position: absolute;
+  top:1480px;
+  left: 65px;
+}
+
+#commentaires_1_filtres {
+  position: absolute;
+  top:750px;
+  left:65px;
+}
+
+#commentaires_2_filtres {
+  position: absolute;
+  top:750px;
+  left:390px;
+}
+
+#commentaires_3_filtres {
+  position: absolute;
+  top:750px;
+  left:720px;
+}
+
+#commentaires_4_filtres {
+  position: absolute;
+  top:750px;
+  left:1060px;
+}
+
+#commentaires_5_filtres {
+  position: absolute;
+  top:1260px;
+  left:65px;
+}
+
+#commentaires_6_filtres {
+  position: absolute;
+  top:1260px;
+  left:390px;
+}
+
+#commentaires_7_filtres {
+  position: absolute;
+  top:1260px;
+  left:720px;
+}
+
+#commentaires_8_filtres {
+  position: absolute;
+  top:1260px;
+  left:1060px;
+}
+
+#commentaires_9_filtres {
+  position: absolute;
+  top:1770px;
+  left: 65px;
+}
+
+#vues_1_filtres {
+  position: absolute;
+  top:750px;
+  left:213px;
+}
+
+#vues_2_filtres {
+  position: absolute;
+  top:750px;
+  left:533px;
+}
+
+#vues_3_filtres {
+  position: absolute;
+  top:750px;
+  left:863px;
+}
+
+#vues_4_filtres {
+  position: absolute;
+  top:750px;
+  left:1203px;
+}
+
+#vues_5_filtres {
+  position: absolute;
+  top:1260px;
+  left:213px;
+}
+
+#vues_6_filtres {
+  position: absolute;
+  top:1260px;
+  left:533px;
+}
+
+#vues_7_filtres {
+  position: absolute;
+  top:1260px;
+  left:863px;
+}
+
+#vues_8_filtres {
+  position: absolute;
+  top:1260px;
+  left:1203px;
+}
+
+#vues_9_filtres {
+  position: absolute;
+  top:1770px;
+  left: 213px;
+}
+
+#TDJ_1_filtres{
+  position: absolute;
+  top: 470px;
+  left: 58px;
+}
+
+#TDJ_2_filtres{
+  position: absolute;
+  top: 470px;
+  left: 380px;
+}
+
+#TDJ_3_filtres{
+  position: absolute;
+  top: 470px;
+  left: 710px;
+}
+
+#Populaires_1_filtres{
+  position: absolute;
+  top: 470px;
+  left: 1050px;
+}
+
+
+#titre_Made_in_Abyss_filtres {
+  position: absolute;
+  top: 820px;
+  left: 710px;
+}
+
+#titre_Gintama_1_filtres {
+  position: absolute;
+  top: 820px;
+  left: 380px;
+}
+
+#titre_Gintama_2_filtres {
+  position: absolute;
+  top: 850px;
+  left: 380px;
+}
+
+#Sen_to_Chihiro_no_filtres {
+  position: absolute;
+  top: 820px;
+  left: 1050px;
+}
+
+#Kamikakushi_2  {
+  position: absolute;
+  top: 850px;
+  left: 1050px;
+}
+
+
+#genre_1_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 59px;
+}
+
+
+#genre_2_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 380px;
+}
+
+#genre_3_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 710px;
+}
+
+#genre_4_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 1050px;
+}
+
+#genre_5_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 58px;
+}
+
+#genre_6_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 380px;
+}
+
+#genre_7_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 710px;
+}
+
+#genre_8_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 1050px;
+}
+
+#genre_9_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1825px;
+  left: 58px;
+}
+
+
+#genre_shonen_1_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 150px;
+}
+
+#genre_shonen_2_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 472px;
+}
+
+#genre_shonen_3_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 802px;
+}
+
+#genre_shonen_4_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 810px;
+  left: 1142px;
+}
+
+#genre_shonen_5_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 150px;
+}
+
+#genre_shonen_6_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 470px;
+}
+
+#genre_shonen_7_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 800px;
+}
+
+#genre_shonen_8_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1315px;
+  left: 1140px;
+}
+
+#genre_shonen_9_filtres {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1825px;
+  left: 148px;
+}
+
+#Populaires_2_filtres {
+  position: absolute;
+  top: 980px;
+  left: 58px;
+}
+
+#One_Piece_Stampede_filtres {
+  position: absolute;
+  top: 1320px;
+  left: 58px;
+}
+
+#Fate_Stay_Night_filtres {
+  position: absolute;
+  top: 1320px;
+  left: 380px;
+}
+
+#Unlimited_filtres {
+  position: absolute;
+  top: 1350px;
+  left: 380px;
+}
+
+#Populaires_3_filtres {
+  position: absolute;
+  top: 980px;
+  left: 380px;
+}
+
+#Great_Teacher_Onizuka_filtres {
+  position: absolute;
+  top: 1320px;
+  left: 710px;
+}
+
+#Fate_stay_1_filtres {
+  position: absolute;
+  top: 1320px;
+  left: 1050px;
+}
+
+#Fate_stay_2_filtres {
+  position: absolute;
+  top: 1350px;
+  left: 1050px;
+}
+
+#Récemment_1_filtres {
+  position: absolute;
+  top: 980px;
+  left: 710px;
+}
+
+#Récemment_2_filtres {
+  position: absolute;
+  top: 980px;
+  left: 1050px;
+}
+
+#Récemment_3_filtres {
+  position: absolute;
+  top: 1490px;
+  left: 58px;
+}
+
+#Deamon_Slayers_filtres {
+  position: absolute;
+  top: 1830px;
+  left: 58px;
+}
+
+#Shonen {
+  color: DarkGrey;
+  position: absolute;
+  top:410px;
+  left:335px;
+}
+
+#Shojo {
+  color: DarkGrey;
+  position: absolute;
+  top:410px;
+  left:538px;
+}
+
+#Seinen {
+  color: DarkGrey;
+  position: absolute;
+  top:410px;
+  left:765px;
+}
+
+#Action {
+  color: DarkGrey;
+  position: absolute;
+  top:410px;
+  left:1030px;
+}
+
+#Aventure {
+  color: DarkGrey;
+  position: absolute;
+  top:410px;
+  left:1222px;
+}
+
+
+
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------Catégories----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+
+.décal {
+  position: relative;
+  top: 0px;
+  left:15px;
+}
+
+.texte_article{
+  position: relative;
+  top: 0px;
+  left:17px;
+}
+
+#Notre_Blog {
+  position: absolute;
+  top:160px;
+  left:140px;
+}
+
+#BlogCommentaires_deux {
+  position: absolute;
+  top:528px;
+  left:140px;
+}
+
+#BlogCommentaires_trois {
+  position: absolute;
+  top:528px;
+  left:140px;
+}
+
+#BlogCommentaires_quatre {
+  position: absolute;
+  top:528px;
+  left:140px;
+}
+
+#BlogVues_deux {
+  position: absolute;
+  top:528px;
+  left:210px;
+  background-color : #3D3D3D ;
+	border-radius: 5px;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+	width:60px;
+}
+
+#BlogVues_trois {
+  position: absolute;
+  top:528px;
+  left:210px;
+  background-color : #3D3D3D ;
+	border-radius: 5px;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+	width:60px;
+}
+
+#BlogVues_quatre {
+  position: absolute;
+  top:528px;
+  left:210px;
+  background-color : #3D3D3D ;
+	border-radius: 5px;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+	width:60px;
+}
+
+#1_article {
+  position: relative;
+  top:100px;
+  left:0px;
+}
+
+#article_Deux {
+  position: relative;
+  top:150px;
+  left:55px;
+}
+
+#article_Trois {
+  position: relative;
+  top:230px;
+  left:55px;
+}
+
+#article_Quatre {
+  position: relative;
+  top:310px;
+  left:55px;
+}
+
+
+#phrase_image_blog{
+  position: absolute;
+  top:220px;
+  left:140px;
+}
+
+.article {
+  border: 2px  solid grey;
+  padding-left: 30px;
+  position: relative;
+  top:70px;
+  left:55px;
+  width:1200px;
+  border-radius:10px;
+  padding-bottom:40px;
+}
+
+#Blog_Genre {
+  background-color:#ffffff33;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width:75px;
+  position: relative;
+  top:10px;
+  left:0px;
+}
+
+
+.DeuxièmeImageBlog{
+  border-radius:5px;
+  width: 750px;
+  float: left;
+}
+
+.TroisièmeImageBlog{
+  border-radius: 5px;
+  width: 750px;
+  float: left;
+}
+
+
+.QuatrièmeImageBlog{
+  border-radius: 5px;
+  width: 750px;
+  float: left;
+}
+
+.BlogGenre
+{
+  clear: left;
+}
+
+.BlogGenre{
+  
+  background-color:#ffffff33;
+  border-radius: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  width:75px;
+}
+
+#BlogCommentaires{
+  text-align:center;
+  background-color : #3D3D3D ;
+	border-radius: 3px;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+	width:40px;
+	position: absolute;
+  top:500px;
+  left:120px;
+}
+
+
+#BlogVues{
+  background-color : #3D3D3D ;
+	border-radius: 5px;
+	padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+	width:60px;
+	position: absolute;
+  top:500px;
+  left:185px;
+}
+
+
+.imageblog{
+  border-radius: 5px;
+  width: 750px;
+}
+
+.imageblog
+{
+  float: left;
+}
+
+.plusflottant
+{
+  clear: left;
+}
+
+.Plusflottant
+{
+  clear: left;
+}
+
+.PlusFlottant
+{
+  clear:left;
+}
+  
+  
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------BLOG--------------------------------------------------------------------------------*/
+
+
+#Tendance_du_jour {
+  border-left: 4px red solid;
+  padding-left: 5px;
+  position: absolute;
+  top: 400px;
+  left:48px;
+}
+
+#Populaires {
+  border-left: 4px red solid;
+  padding-left: 5px;
+}
+
+#Récemment_ajoutés {
+  border-left: 4px red solid;
+  padding-left: 5px;
+}
+
+
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+
+
+
+.menu_footer {
+  display: flex;
+}
+
+.menu_footer li {
+  margin: 0 10px;
+  position: relative;
+  top: 0px;
+  left: 700px;
+}
+.logo_footer {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+
+li {
+list-style-type: none ;
+}
+
+#footer_EP {
+  position: absolute;
+  top: 1300px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_1{
+  position: absolute;
+  top: 2350px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_2{
+  position: absolute;
+  top: 2000px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_3{
+  position: absolute;
+  top: 3200px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_4{
+  position: absolute;
+  top: 700px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_5{
+  position: absolute;
+  top: 800px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_détails {
+  position: absolute;
+  top:1500px;
+  left:0px;
+  bottom:0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_détails_GTO {
+  position: absolute;
+  top:1200px;
+  left:0px;
+  bottom:0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_détails_DS {
+  position: absolute;
+  top:1725px;
+  left:0px;
+  bottom:0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+#footer_détails_One_Piece {
+  position: absolute;
+  top:2225px;
+  left:0px;
+  bottom:0;
+  right: 0;
+  height: 80px;
+  width: 100vw;
+  padding-top:40px;
+  background:#070720;
+}
+
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------Footer------------------------------------------------------------------------------*/
+
+
+
+.cote{
+  text-align:center;
+}
+
+.genre {
+  padding:3px;
+  text-align:center;
+}
+
+.icon-comments {
+  text-align:center;
+  border:auto;
+  padding:2px;
+}
+
+.icon-eye {
+  text-align:center;
+  padding:2px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-comments:before {
+  content: "\f086";
+}
+
+.icon-play:before {
+  content: "\f04b";
+}
+
+.icon-question:before {
+  content: "\f128";
+}
+
+.icon-eye:before {
+  content: "\f06e";
+}
+
+
+
+.icon-expand_less:before {
+  color: white;
+  background:red;
+  content: "\e5ce";
+  border-radius:200px;
+  position: absolute;
+  top: 0px;
+  left: 640px;
+}
+
+.icône-flèche-cercle-droite:before {
+  content:"\f0a9";
+}
+
+
+
+h1{
+  font-family: 'oswald',Impact, "Arial Black", Arial, Verdana
+}
+
+
+p{
+  font-family: 'mulish',Impact,"Arial Black", Arial, Verdana
+}
+
+h3{
+  font-family: 'mulish',Impact,"Arial Black", Arial, Verdana
+}
+
+h4{
+  font-family: 'mulish',Impact,"Arial Black", Arial, Verdana
+}
+
+nav{
+  font-family: 'mulish',Impact,"Arial Black", Arial, Verdana
+}
+
+#container {
+	
+	background-color: #070720;
+	height: 80px;
+	font-weight: bold;
+}
+
+
+nav .pagecourante {
+	background-color : #e53637 ;
+}
+
+nav .catégories{
+  background-color : #e53637 ;
+}
+
+nav .blog{
+  background-color : #e53637 ;
+}
+
+nav .contact{
+  background-color : #e53637 ;
+}
+
+nav .connexion{
+  background-color : #e53637 ;
+}
+
+
+a{
+  text-decoration: none ;
+}
+
+
+a {
+   color: #b7b7b7;
+ }
+ 
+ body{
+  background-color:#0b0c2a;
+ }
+ 
+ body{
+   color:white;
+ }
+ 
+.imagesindex{
+   height: 325px;
+ }
+ 
+ 
+ .imagesindex{
+   border-radius: 10px;
+ }
+ 
+
+h1{
+  font-family: 'oswald',Impact, "Arial Black", Arial, Verdana
+}
+
+section .genre{
+  background-color:#ffffff33;
+  border-radius: 20px;
+  width:50px;
+}
+
+section .cote{
+  background-color : #e53637 ;
+	border-radius: 3px;
+	width:60px;
+}
+
+section .icon-comments{
+  background-color : #3D3D3D ;
+	border-radius: 3px;
+	width:50px;
+}
+
+.icon-comments{
+  background-color : #3D3D3D ;
+	border-radius: 3px;
+	width:50px;
+}
+
+section .icon-eye{
+  background-color : #3D3D3D ;
+	border-radius: 2px;
+	width:65px;
+}
+
+.icon-eye{
+  background-color : #3D3D3D ;
+	border-radius: 3px;
+	width:50px;
+}
+
+
+
+
+#index:hover{
+	color: white;
+}
+
+#catégories:hover{
+  color: white;
+}
+
+#blog:hover{
+  color: white;
+}
+
+#contact:hover{
+  color: white;
+}
+
+#connexion:hover{
+  color: white;
+}
+
+
+.breadcrumb {
+  border-radius: 5px;
+  width: 1300px;
+  height:250px;
+}
+
+
+
+.navbar {
+  margin:0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+
+nav li{
+  display:inline-block;
+  padding :0px;
+  width: 100px;
+  height:40px;
+  text-align:center;
+  line-height:50px;
+}
+
+nav li a{
+  display:block;
+}
+
+nav li :hover{
+  background-color:#e53637;
+  transition: all 1s ;
+}
+
+
+
+#bannière {
+  position: relative;
+  top:20px;
+  left:80px;
+}
+
+
+
+
+#première_phrase_1{
+  position: absolute;
+  top: 405px;
+  left: 150px;
+}
+
+#première_phrase_2{
+  position: absolute;
+  top: 450px;
+  left: 150px;
+}
+
+
+#deuxième_phrase{
+  position: absolute;
+  top: 520px;
+  left: 150px;
+}
+
+#Tendance_du_jour{
+ position: absolute;
+  top: 700px;
+  left: 60px;
+}
+
+
+#TDJ_1 {
+  position: absolute;
+  top: 780px;
+  left: 60px;
+}
+
+
+#TDJ_2 {
+  position: absolute;
+  top: 780px;
+  left: 550px;
+}
+
+
+#TDJ_3 {
+  position: absolute;
+  top: 780px;
+  left: 1050px;
+}
+
+#titre_boruto_1 {
+  position: absolute;
+  top: 1135px;
+  left: 58px;
+}
+
+#titre_boruto_2 {
+  position: absolute;
+  top: 1160px;
+  left: 58px;
+}
+
+
+#cote_1 {
+  position: absolute;
+  top: 770px;
+  left: 70px;
+}
+
+
+#commentaires_1 {
+  position: absolute;
+  top: 1060px;
+  left: 70px;
+}
+
+
+#vues_1 {
+  position: absolute;
+  top: 1060px;
+  left: 215px;
+}
+
+
+#cote_2 {
+  position: absolute;
+  top: 770px;
+  left: 560px;
+}
+
+#commentaires_2 {
+  position: absolute;
+  top: 1060px;
+  left: 560px;
+}
+
+#vues_2 {
+  position: absolute;
+  top: 1060px;
+  left: 705px;
+}
+
+
+#cote_3 {
+  position: absolute;
+  top: 770px;
+  left: 1060px;
+}
+
+#commentaires_3 {
+  position: absolute;
+  top: 1060px;
+  left: 1060px;
+}
+
+#vues_3 {
+  position: absolute;
+  top: 1060px;
+  left: 1205px;
+}
+
+
+#genre_1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1125px;
+  left: 150px;
+}
+
+#genre_2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1125px;
+  left: 640px;
+}
+
+#genre_3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1125px;
+  left: 1145px;
+}
+
+
+
+
+#titre_Gintama_1 {
+  position: absolute;
+  top: 1135px;
+  left: 550px;
+}
+
+#titre_Gintama_2 {
+  position: absolute;
+  top: 1160px;
+  left: 550px;
+}
+
+#titre_Made_in_Abyss{
+  position: absolute;
+  top: 1135px;
+  left: 1050px;
+}
+
+
+
+#Populaires{
+  position: absolute;
+  top: 1220px;
+  left: 60px;
+}
+
+#Populaires_1 {
+  position: absolute;
+  top: 1300px;
+  left: 60px;
+}
+
+#Populaires_2 {
+  position: absolute;
+  top: 1300px;
+  left: 550px;
+}
+
+#Populaires_3 {
+  position: absolute;
+  top: 1300px;
+  left: 1050px;
+}
+
+
+#cote_4 {
+  position: absolute;
+  top: 1290px;
+  left: 70px;
+}
+
+#cote_5 {
+  position: absolute;
+  top: 1290px;
+  left: 560px;
+}
+
+#cote_6 {
+  position: absolute;
+  top: 1290px;
+  left: 1060px;
+}
+
+
+#commentaires_4 {
+  position: absolute;
+  top: 1580px;
+  left: 70px;
+}
+
+#commentaires_5 {
+  position: absolute;
+  top: 1580px;
+  left: 560px;
+}
+
+#commentaires_6 {
+  position: absolute;
+  top: 1580px;
+  left: 1060px;
+}
+
+
+#vues_4 {
+  position: absolute;
+  top: 1580px;
+  left: 215px;
+}
+
+#vues_5 {
+  position: absolute;
+  top: 1580px;
+  left: 705px;
+}
+
+#vues_6 {
+  position: absolute;
+  top: 1580px;
+  left: 1205px;
+}
+
+#genre_4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1645px;
+  left: 150px;
+}
+
+#genre_5 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1645px;
+  left: 640px;
+}
+
+#genre_6 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1645px;
+  left: 1145px;
+}
+
+
+#Sen_to_Chihiro_no {
+  position: absolute;
+  top: 1655px;
+  left: 60px;
+}
+
+#Kamikakushi {
+  position: absolute;
+  top: 1680px;
+  left: 60px;
+}
+
+#One_Piece_Stampede {
+  position: absolute;
+  top: 1655px;
+  left: 550px;
+}
+
+#Fate_Stay_Night {
+  position: absolute;
+  top: 1655px;
+  left: 1050px;
+}
+
+#Unlimited {
+  position: absolute;
+  top: 1680px;
+  left: 1050px;
+}
+
+
+#Récemment_ajoutés{
+  position: absolute;
+  top: 1750px;
+  left: 60px;
+}
+
+#Récemment_1 {
+  position: absolute;
+  top: 1830px;
+  left: 60px;
+}
+
+#Récemment_2{
+  position: absolute;
+  top: 1830px;
+  left: 550px;
+}
+
+#Récemment_3{
+  position: absolute;
+  top: 1830px;
+  left: 1050px;
+}
+
+#cote_7 {
+  position: absolute;
+  top: 1820px;
+  left: 70px;
+}
+
+#cote_8 {
+  position: absolute;
+  top: 1820px;
+  left: 560px;
+}
+
+#cote_9 {
+  position: absolute;
+  top: 1820px;
+  left: 1060px;
+}
+
+#commentaires_7 {
+  position: absolute;
+  top: 2110px;
+  left: 70px;
+}
+
+#commentaires_8 {
+  position: absolute;
+  top: 2110px;
+  left: 560px;
+}
+
+#commentaires_9 {
+  position: absolute;
+  top: 2110px;
+  left: 1060px;
+}
+
+#vues_7 {
+  position: absolute;
+  top: 2110px;
+  left: 215px;
+}
+
+#vues_8 {
+  position: absolute;
+  top: 2110px;
+  left: 705px;
+}
+
+#vues_9 {
+  position: absolute;
+  top: 2110px;
+  left: 1205px;
+}
+
+#genre_7 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 2175px;
+  left: 150px;
+}
+
+#genre_8 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 2175px;
+  left: 640px;
+}
+
+#genre_9 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 2175px;
+  left: 1145px;
+}
+
+
+#genre_shonen_1{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1125px;
+  left: 60px;
+}
+
+#genre_shonen_2{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1125px;
+  left: 550px;
+}
+
+#genre_shonen_3{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1125px;
+  left: 1055px;
+}
+
+#genre_shonen_4{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1645px;
+  left: 60px;
+}
+
+#genre_shonen_5{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1645px;
+  left: 550px;
+}
+
+#genre_shonen_6{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 1645px;
+  left: 1055px;
+}
+
+#genre_shonen_7{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 2175px;
+  left: 60px;
+}
+
+#genre_shonen_8{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 2175px;
+  left: 550px;
+}
+
+#genre_shonen_9{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 2175px;
+  left: 1055px;
+}
+
+
+#Great_Teacher_Onizuka {
+  position: absolute;
+  top: 2185px;
+  left: 60px;
+}
+
+#Fate_stay_1 {
+  position: absolute;
+  top: 2185px;
+  left: 550px;
+}
+
+#Fate_stay_2{
+  position: absolute;
+  top: 2210px;
+  left: 550px;
+}
+
+#Deamon_Slayers{
+  position: absolute;
+  top: 2185px;
+  left: 1050px;
+}
+
+.breadcrumb {
+  position: relative;
+  top:20px;
+  left:25px;
+}
+
+#Triez_par_catégorie {
+  position: absolute;
+  top: 210px;
+  left: 250px;
+}
+
+#détails_1 {
+  position: absolute;
+  top: 190px;
+  left: 220px;
+}
+
+.image_détails {
+  position: absolute;
+  top: 420px;
+  left: 50px;
+}
+
+#titre_détails {
+  position: absolute;
+  top: 397px;
+  left: 290px;
+}
+
+#description_détails {
+  position: absolute;
+  top: 510px;
+  left: 290px;
+}
+
+.détails_1 {
+  position: absolute;
+  top: 630px;
+  left: 290px;
+}
+
+.détails_2 {
+  position: absolute;
+  top: 630px;
+  left: 800px;
+}
+
+.auteur_détails {
+  position: absolute;
+  top: 450px;
+  left: 290px;
+}
+
+.votes_détails {
+  position: absolute;
+  top: 450px;
+  left: 1225px;
+}
+
+#commentaires_détails {
+  position: absolute;
+  top: 700px;
+  left: 60px;
+}
+
+#vues_détails {
+  padding-left:15px;
+  padding-right:15px;
+  position: absolute;
+  top: 700px;
+  left: 195px;
+}
+
+.icon-star_half:before {
+  content: "\e839";
+  position: absolute;
+  top: 420px;
+  left: 1245px;
+  color:orange;
+}
+
+.icon-star_border:before {
+  content: "\e83a";
+  position: absolute;
+  top: 420px;
+  left: 1280px;
+  color:orange;
+}
+
+.icon-star_1:before {
+  content: "\f005";
+  position: absolute;
+  top: 420px;
+  left: 1210px;
+  color:orange;
+}
+
+.icon-star_2:before {
+  content: "\f005";
+  position: absolute;
+  top: 420px;
+  left: 1175px;
+  color:orange;
+}
+
+.icon-star_3:before {
+  content: "\f005";
+  position: absolute;
+  top: 420px;
+  left: 1140px;
+  color:orange;
+}
+
+
+.auteur_détails{
+  color:DarkGrey;
+}
+
+#description_détails {
+  color:DarkGrey;
+}
+
+.votes_détails {
+  color:DarkGrey;
+}
+
+.détails_1{
+  color:DarkGrey;
+}
+
+.détails_2 {
+  color:DarkGrey;
+}
+
+.serie_détails {
+  position: absolute;
+  top: 630px;
+  left: 430px;
+}
+
+.studio_détails {
+   position: absolute;
+  top: 650px;
+  left: 430px;
+}
+
+.date_détails {
+  position: absolute;
+  top: 670px;
+  left: 430px;
+}
+
+.genre_détails {
+  position: absolute;
+  top: 690px;
+  left: 430px;
+}
+
+.score_détails {
+  position: absolute;
+  top: 710px;
+  left: 430px;
+}
+
+.temps_détails {
+  position: absolute;
+  top: 650px;
+  left: 950px;
+}
+
+.qualité_détails {
+  position: absolute;
+  top: 670px;
+  left: 950px;
+}
+
+.vues_détails {
+  position: absolute;
+  top: 690px;
+  left: 950px;
+}
+
+.icon-smile-o:before {
+  position: absolute;
+  content: "\f00c";
+  top: 780px;
+  left: 70px;
+}
+
+.image_détails {
+  border-radius: 3px;
+}
+
+#Restez_en_contact {
+  position: absolute;
+  top: 200px;
+  left: 125px;
+}
+
+#rue_contact {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+}
+
+#numéro{
+   position: absolute;
+  top: 400px;
+  left: 600px;
+}
+
+#mail {
+  position: absolute;
+  top: 400px;
+  left: 900px;
+}
+
+#Bruxelle {
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+
+#phrase_contact {
+  position: absolute;
+  top: 450px;
+  left: 900px;
+}
+
+#horaire {
+   position: absolute;
+  top: 450px;
+  left: 600px;
+}
+
+.icon-home:before {
+  position: absolute;
+  content: "\f015";
+  top: 420px;
+  left: 160px;
+  color:withe;
+}
+
+.icon-tablet_mac:before {
+  position: absolute;
+  content: "\e331";
+  top: 420px;
+  left: 560px;
+}
+
+.icon-mail_outline:before {
+  position: absolute;
+  content: "\e0e1";
+  top: 420px;
+  left: 860px;
+}
+
+.nav-links {
+  position: absolute;
+  top:0px;
+  left:730px;
+}
+
+.index_html {
+  position: absolute;
+  top:25px;
+  left:70px;
+}
+
+#container {
+	justify-content:flex-wrap:wrap
+}
+
+#Tendance_du_jour

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="style.css" />
+			<title>Anime</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		</head>
+		
+		<body>
+		  <header id="container">
+	<nav class="navbar">
+	<a href="index.html" class="index_html"><img src="images/logo.png" alt="logo de la page"/></a>
+	<div class="nav-links">
+		<ul>
+			<li><a id="index" class="pagecourante" href="index.html">Accueil</a></li>
+			<li><a id="catégories" href="Catégories.html">Catégories</a></li>
+			<li><a id="blog" href="Blog.html">Blog</a></li>
+			<li><a id="contact" href="Contact.html">Contact</a></li>
+			<li><a id="connexion" href="Connexion.html">Connexion</a></li>
+	  </ul>
+	</div>
+	</nav>
+	</header>
+			
+			  <img class="breadcrumb" src="images/breadcrumb.jpg" alt="bannière de la page"/>
+			  <h1 id="détails_1">Tout sur votre manga !</h1>
+			  <button id="PRECEDENT" class="Lien_EP"><span class="icône-flèche-cercle-gauche"></span>PRECEDENT</button>
+        <button id="SUIVANT" class="Lien_EP">SUIVANT<span class="icône-flèche-cercle-droite"></span></button>
+			  <a class="Lien_EP" href="boruto_EP_225.html"><h4 class="dernier episode" id="D_episode"><span class="icon-arrow-circle-down"></span>DERNIER EPISODE</h4></a>
+
+
+	<div>
+		<select id="selection_EP">
+      <option value="1">Épisode 1</option>
+      <option value="2">Épisode 2</option>
+      <option value="3">Épisode 3</option>
+      <option value="4">Épisode 4</option>
+      <option value="5">Épisode 5</option>
+      <option value="6">Épisode 6</option>
+      <option value="7">Épisode 7</option>
+      <option value="8">Épisode 8</option>
+      <option value="9">Épisode 9</option>
+      <option value="10">Épisode 10</option>
+      <option value="11">Épisode 11</option>
+      <option value="12">Épisode 12</option>
+    </select>
+  </div>
+
+  <div>
+    <select id="selection_LECTEUR">
+      <option value="1">Lecteur 1</option>
+      <option value="2">Lecteur 2</option>
+    </select>
+	</div>
+
+		 
+<div id="videoContainer">
+  <iframe id="video_EP" width="790" height="540" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" allowScriptAccess="always" mozallowfullscreen="true" allow="encrypted-media"></iframe>
+</div>
+
+
+<script>
+$(document).ready(function(){
+  var episodes = [
+    {
+      lecteur: '1',
+      videos: [
+        'https://sendvid.com/embed/ft493n5h',
+        'https://sendvid.com/embed/v9ekqqb4',
+        'https://sendvid.com/embed/yy7xdxky',
+        'https://sendvid.com/embed/3w23obvo',
+        'https://sendvid.com/embed/2juuwuv2',
+        'https://sendvid.com/embed/sngwokav',
+        'https://sendvid.com/embed/lbnudtr0',
+        'https://sendvid.com/embed/ox0yqj53',
+        'https://sendvid.com/embed/lsk9g6fi',
+        'https://sendvid.com/embed/0ggvb8kt',
+        'https://sendvid.com/embed/7gk6xxqb',
+        'https://sendvid.com/embed/x9ulbban',
+      ]
+    },
+    {
+      lecteur: '2',
+      videos: [
+        'https://video.sibnet.ru/shell.php?videoid=5068001',
+        'https://video.sibnet.ru/shell.php?videoid=5068003',
+        'https://video.sibnet.ru/shell.php?videoid=5068004',
+        'https://video.sibnet.ru/shell.php?videoid=5068006',
+        'https://video.sibnet.ru/shell.php?videoid=5068009',
+        'https://video.sibnet.ru/shell.php?videoid=5068010',
+        'https://video.sibnet.ru/shell.php?videoid=5068028',
+        'https://video.sibnet.ru/shell.php?videoid=5068030',
+        'https://video.sibnet.ru/shell.php?videoid=5068013',
+        'https://video.sibnet.ru/shell.php?videoid=5068015',
+        'https://video.sibnet.ru/shell.php?videoid=5068018',
+        'https://video.sibnet.ru/shell.php?videoid=5068021',
+      ]
+    },
+   
+    // Ajoutez d'autres lecteurs et leurs vidéos ici
+  ];
+
+  var currentEpisode = 1;
+
+  function updateVideo() {
+    var episode = $('#selection_EP').val();
+    var lecteur = $('#selection_LECTEUR').val();
+    
+    if (episode && lecteur) {
+      var videoLink = episodes.find(function(ep) {
+        return ep.lecteur === lecteur;
+      }).videos[episode - 1];
+      
+      if (videoLink) {
+        $('#video_EP').attr('src', videoLink);
+      }
+      else {
+        $('#videoContainer').html('Lecteur ou épisode non valide.');
+      }
+    }
+  }
+
+  $('#selection_EP, #selection_LECTEUR').change(function(){
+    updateVideo();
+  });
+
+  $('#PRECEDENT').click(function() {
+    if (currentEpisode > 1) {
+      currentEpisode--;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  $('#SUIVANT').click(function() {
+    var totalEpisodes = $('#selection_EP option').length;
+    if (currentEpisode < totalEpisodes) {
+      currentEpisode++;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  // Code pour charger la première vidéo par défaut
+  var defaultEpisode = '1';
+  var defaultLecteur = '1';
+
+  $('#selection_EP').val(defaultEpisode);
+  $('#selection_LECTEUR').val(defaultLecteur);
+  updateVideo();
+});
+</script>
+
+
+
+
+		  
+        
+        <p id="phrase_grise">Un problème sur les vidéos ? Changez de lecteur (sinon consultez <a id="lien_bleu" href="lien_page.html">la page aide</a> ).</p>
+        <p id="Dernier_EP_S">Dernier épisode selectionné: épisode 1</p>
+        <h1 id="Boruto_détails">Made in abyss</h1>
+        <h2 id="avec_fillers">AVEC FILLERS</h2>
+        <img id="drapeau_france" src="images/France.png" alt="drapeau france"/>
+        <h3 id="VF">VF</h3>
+        
+         <footer id="footer_EP">
+		      <div>
+			      <ul class="menu_footer">
+				      <li><a href="index.html">Accueil</a></li>
+				      <li><a href="Catégories.html">Catégories</a></li>
+				      <li><a href="Blog.html">Blog</a></li>
+				      <li><a href="Contact.html">Contact</a></li>
+				      <li><a href="Connexion.html">Connexion</a></li>
+	          </ul>
+          </div>
+
+
+          
+        
+      
+	        <a href="index.html"><h1 class="icon-expand_less" ></h1></a>
+	  
+	        <a class="logo_footer" href="index.html"><img src="images/logo.png" alt="logo de la page"/></a>
+		
+		    </footer>
+		    
+		</body>
+	</html>

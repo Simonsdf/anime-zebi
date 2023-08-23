@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="style.css" />
+			<title>Anime</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		</head>
+		
+		<body>
+		  <header id="container">
+	<nav class="navbar">
+	<a href="index.html" class="index_html"><img src="images/logo.png" alt="logo de la page"/></a>
+	<div class="nav-links">
+		<ul>
+			<li><a id="index" class="pagecourante" href="index.html">Accueil</a></li>
+			<li><a id="catégories" href="Catégories.html">Catégories</a></li>
+			<li><a id="blog" href="Blog.html">Blog</a></li>
+			<li><a id="contact" href="Contact.html">Contact</a></li>
+			<li><a id="connexion" href="Connexion.html">Connexion</a></li>
+	  </ul>
+	</div>
+	</nav>
+	</header>
+			
+			  <img class="breadcrumb" src="images/breadcrumb.jpg" alt="bannière de la page"/>
+			  <h1 id="détails_1">Tout sur votre manga !</h1>
+			  <button id="PRECEDENT" class="Lien_EP"><span class="icône-flèche-cercle-gauche"></span>PRECEDENT</button>
+        <button id="SUIVANT" class="Lien_EP">SUIVANT<span class="icône-flèche-cercle-droite"></span></button>
+			  <a class="Lien_EP" href="boruto_EP_225.html"><h4 class="dernier episode" id="D_episode"><span class="icon-arrow-circle-down"></span>DERNIER EPISODE</h4></a>
+			  
+		  <div>
+			  <select id="selection_LECTEUR">
+			    <option value="1">LECTEUR 1</option>
+			  </select>
+      </div>
+      
+      
+      
+      
+      
+		  
+		  
+		  <div>
+		    <select id="selection_EP">
+		      <option value="1">Épisode 1</option>
+          <option value="2">Épisode 2</option>
+          <option value="3">Épisode 3</option>
+          <option value="4">Épisode 4</option>
+          <option value="5">Épisode 5</option>
+          <option value="6">Épisode 6</option>
+          <option value="7">Épisode 7</option>
+          <option value="8">Épisode 8</option>
+          <option value="9">Épisode 9</option>
+          <option value="10">Épisode 10</option>
+          <option value="11">Épisode 11</option>
+          <option value="12">Épisode 12</option>
+          <option value="13">Épisode 13</option>
+          <option value="14">Épisode 14</option>
+          <option value="15">Épisode 15</option>
+          <option value="16">Épisode 16</option>
+          <option value="17">Épisode 17</option>
+          <option value="18">Épisode 18</option>
+          <option value="19">Épisode 19</option>
+          <option value="20">Épisode 20</option>
+          <option value="21">Épisode 21</option>
+          <option value="22">Épisode 22</option>
+          <option value="23">Épisode 23</option>
+          <option value="24">Épisode 24</option>
+          <option value="25">Épisode 25</option>
+          <option value="26">Épisode 26</option>
+          <option value="27">Épisode 27</option>
+          <option value="28">Épisode 28</option>
+          <option value="29">Épisode 29</option>
+          <option value="30">Épisode 30</option>
+          <option value="31">Épisode 31</option>
+          <option value="32">Épisode 32</option>
+          <option value="33">Épisode 33</option>
+          <option value="34">Épisode 34</option>
+          <option value="35">Épisode 35</option>
+          <option value="36">Épisode 36</option>
+          <option value="37">Épisode 37</option>
+          <option value="38">Épisode 38</option>
+          <option value="39">Épisode 39</option>
+          <option value="40">Épisode 40</option>
+          <option value="41">Épisode 41</option>
+          <option value="42">Épisode 42</option>
+          <option value="43">Épisode 43</option>
+          <option value="44">Épisode 44</option>
+          <option value="45">Épisode 45</option>
+          <option value="46">Épisode 46</option>
+          <option value="47">Épisode 47</option>
+          <option value="48">Épisode 48</option>
+          <option value="49">Épisode 49</option>
+          <option value="50">Épisode 50</option>
+          <option value="51">Épisode 51</option>
+          <option value="52">Épisode 52</option>
+          <option value="53">Épisode 53</option>
+          <option value="54">Épisode 54</option>
+          <option value="55">Épisode 55</option>
+          <option value="56">Épisode 56</option>
+          <option value="57">Épisode 57</option>
+          <option value="58">Épisode 58</option>
+          <option value="59">Épisode 59</option>
+          <option value="60">Épisode 60</option>
+          <option value="61">Épisode 61</option>
+          <option value="62">Épisode 62</option>
+          <option value="63">Épisode 63</option>
+          <option value="64">Épisode 64</option>
+          <option value="65">Épisode 65</option>
+          <option value="66">Épisode 66</option>
+          <option value="67">Épisode 67</option>
+          <option value="68">Épisode 68</option>
+          <option value="69">Épisode 69</option>
+          <option value="70">Épisode 70</option>
+          <option value="71">Épisode 71</option>
+          <option value="72">Épisode 72</option>
+          <option value="73">Épisode 73</option>
+          <option value="74">Épisode 74</option>
+          <option value="75">Épisode 75</option>
+          <option value="76">Épisode 76</option>
+          <option value="77">Épisode 77</option>
+          <option value="78">Épisode 78</option>
+          <option value="79">Épisode 79</option>
+          <option value="80">Épisode 80</option>
+          <option value="81">Épisode 81</option>
+          <option value="82">Épisode 82</option>
+          <option value="83">Épisode 83</option>
+          <option value="84">Épisode 84</option>
+          <option value="85">Épisode 85</option>
+          <option value="86">Épisode 86</option>
+          <option value="87">Épisode 87</option>
+          <option value="88">Épisode 88</option>
+          <option value="89">Épisode 89</option>
+          <option value="90">Épisode 90</option>
+          <option value="91">Épisode 91</option>
+          <option value="92">Épisode 92</option>
+          <option value="93">Épisode 93</option>
+          <option value="94">Épisode 94</option>
+          <option value="95">Épisode 95</option>
+          <option value="96">Épisode 96</option>
+          <option value="97">Épisode 97</option>
+          <option value="98">Épisode 98</option>
+          <option value="99">Épisode 99</option>
+          <option value="100">Épisode 100</option>
+          <option value="101">Épisode 101</option>
+          <option value="102">Épisode 102</option>
+          <option value="103">Épisode 103</option>
+          <option value="104">Épisode 104</option>
+          <option value="105">Épisode 105</option>
+          <option value="106">Épisode 106</option>
+          <option value="107">Épisode 107</option>
+          <option value="108">Épisode 108</option>
+          <option value="109">Épisode 109</option>
+          <option value="110">Épisode 110</option>
+          <option value="111">Épisode 111</option>
+          <option value="112">Épisode 112</option>
+          <option value="113">Épisode 113</option>
+          <option value="114">Épisode 114</option>
+          <option value="115">Épisode 115</option>
+          <option value="116">Épisode 116</option>
+          <option value="117">Épisode 117</option>
+          <option value="118">Épisode 118</option>
+          <option value="119">Épisode 119</option>
+          <option value="120">Épisode 120</option>
+          <option value="121">Épisode 121</option>
+          <option value="122">Épisode 122</option>
+          <option value="123">Épisode 123</option>
+          <option value="124">Épisode 124</option>
+          <option value="125">Épisode 125</option>
+          <option value="126">Épisode 126</option>
+          <option value="127">Épisode 127</option>
+          <option value="128">Épisode 128</option>
+          <option value="129">Épisode 129</option>
+          <option value="130">Épisode 130</option>
+          <option value="131">Épisode 131</option>
+          <option value="132">Épisode 132</option>
+          <option value="133">Épisode 133</option>
+          <option value="134">Épisode 134</option>
+          <option value="135">Épisode 135</option>
+          <option value="136">Épisode 136</option>
+          <option value="137">Épisode 137</option>
+          <option value="138">Épisode 138</option>
+          <option value="139">Épisode 139</option>
+          <option value="140">Épisode 140</option>
+          <option value="141">Épisode 141</option>
+          <option value="142">Épisode 142</option>
+          <option value="143">Épisode 143</option>
+          <option value="144">Épisode 144</option>
+          <option value="145">Épisode 145</option>
+          <option value="146">Épisode 146</option>
+          <option value="147">Épisode 147</option>
+          <option value="148">Épisode 148</option>
+          <option value="149">Épisode 149</option>
+          <option value="150">Épisode 150</option>
+          <option value="151">Épisode 151</option>
+          <option value="152">Épisode 152</option>
+          <option value="153">Épisode 153</option>
+          <option value="154">Épisode 154</option>
+          <option value="155">Épisode 155</option>
+          <option value="156">Épisode 156</option>
+          <option value="157">Épisode 157</option>
+          <option value="158">Épisode 158</option>
+          <option value="159">Épisode 159</option>
+          <option value="160">Épisode 160</option>
+          <option value="161">Épisode 161</option>
+          <option value="162">Épisode 162</option>
+          <option value="163">Épisode 163</option>
+          <option value="164">Épisode 164</option>
+          <option value="165">Épisode 165</option>
+          <option value="166">Épisode 166</option>
+          <option value="167">Épisode 167</option>
+          <option value="168">Épisode 168</option>
+          <option value="169">Épisode 169</option>
+          <option value="170">Épisode 170</option>
+          <option value="171">Épisode 171</option>
+          <option value="172">Épisode 172</option>
+          <option value="173">Épisode 173</option>
+          <option value="174">Épisode 174</option>
+          <option value="175">Épisode 175</option>
+          <option value="176">Épisode 176</option>
+          <option value="177">Épisode 177</option>
+          <option value="178">Épisode 178</option>
+          <option value="179">Épisode 179</option>
+          <option value="180">Épisode 180</option>
+          <option value="181">Épisode 181</option>
+          <option value="182">Épisode 182</option>
+          <option value="183">Épisode 183</option>
+          <option value="184">Épisode 184</option>
+          <option value="185">Épisode 185</option>
+          <option value="186">Épisode 186</option>
+          <option value="187">Épisode 187</option>
+          <option value="188">Épisode 188</option>
+          <option value="189">Épisode 189</option>
+          <option value="190">Épisode 190</option>
+          <option value="191">Épisode 191</option>
+          <option value="192">Épisode 192</option>
+          <option value="193">Épisode 193</option>
+          <option value="194">Épisode 194</option>
+          <option value="195">Épisode 195</option>
+          <option value="196">Épisode 196</option>
+          <option value="197">Épisode 197</option>
+          <option value="198">Épisode 198</option>
+          <option value="199">Épisode 199</option>
+          <option value="200">Épisode 200</option>
+          <option value="201">Épisode 201</option>
+          <option value="202">Épisode 202</option>
+          <option value="203">Épisode 203</option>
+          <option value="204">Épisode 204</option>
+          <option value="205">Épisode 205</option>
+          <option value="206">Épisode 206</option>
+          <option value="207">Épisode 207</option>
+          <option value="208">Épisode 208</option>
+          <option value="209">Épisode 209</option>
+          <option value="210">Épisode 210</option>
+          <option value="211">Épisode 211</option>
+          <option value="212">Épisode 212</option>
+          <option value="213">Épisode 213</option>
+          <option value="214">Épisode 214</option>
+          <option value="215">Épisode 215</option>
+          <option value="216">Épisode 216</option>
+          <option value="217">Épisode 217</option>
+          <option value="218">Épisode 218</option>
+          <option value="219">Épisode 219</option>
+          <option value="220">Épisode 220</option>
+          <option value="221">Épisode 221</option>
+          <option value="222">Épisode 222</option>
+          <option value="223">Épisode 223</option>
+          <option value="224">Épisode 224</option>
+          <option value="225">Épisode 225</option>
+          <option value="226">Épisode 226</option>
+          <option value="227">Épisode 227</option>
+          <option value="228">Épisode 228</option>
+          <option value="229">Épisode 229</option>
+          <option value="230">Épisode 230</option>
+          <option value="231">Épisode 231</option>
+          <option value="232">Épisode 232</option>
+          <option value="233">Épisode 233</option>
+          <option value="234">Épisode 234</option>
+          <option value="235">Épisode 235</option>
+          <option value="236">Épisode 236</option>
+          <option value="237">Épisode 237</option>
+          <option value="238">Épisode 238</option>
+          <option value="239">Épisode 239</option>
+          <option value="240">Épisode 240</option>
+          <option value="241">Épisode 241</option>
+          <option value="242">Épisode 242</option>
+          <option value="243">Épisode 243</option>
+          <option value="244">Épisode 244</option>
+          <option value="245">Épisode 245</option>
+          <option value="246">Épisode 246</option>
+          <option value="247">Épisode 247</option>
+          <option value="248">Épisode 248</option>
+          <option value="249">Épisode 249</option>
+          <option value="250">Épisode 250</option>
+          <option value="251">Épisode 251</option>
+          <option value="252">Épisode 252</option>
+          <option value="253">Épisode 253</option>
+          <option value="254">Épisode 254</option>
+          <option value="255">Épisode 255</option>
+          <option value="256">Épisode 256</option>
+          <option value="257">Épisode 257</option>
+          <option value="258">Épisode 258</option>
+          <option value="259">Épisode 259</option>
+          <option value="260">Épisode 260</option>
+          <option value="261">Épisode 261</option>
+          <option value="262">Épisode 262</option>
+          <option value="263">Épisode 263</option>
+          <option value="264">Épisode 264</option>
+          <option value="265">Épisode 265</option>
+          <option value="266">Épisode 266</option>
+          <option value="267">Épisode 267</option>
+          <option value="268">Épisode 268</option>
+          <option value="269">Épisode 269</option>
+          <option value="270">Épisode 270</option>
+          <option value="271">Épisode 271</option>
+          <option value="272">Épisode 272</option>
+          <option value="273">Épisode 273</option>
+          <option value="274">Épisode 274</option>
+          <option value="275">Épisode 275</option>
+          <option value="276">Épisode 276</option>
+          <option value="277">Épisode 277</option>
+          <option value="278">Épisode 278</option>
+          <option value="279">Épisode 279</option>
+          <option value="280">Épisode 280</option>
+          <option value="281">Épisode 281</option>
+          <option value="282">Épisode 282</option>
+          <option value="283">Épisode 283</option>
+          <option value="284">Épisode 284</option>
+          <option value="285">Épisode 285</option>
+          <option value="286">Épisode 286</option>
+          <option value="287">Épisode 287</option>
+          <option value="288">Épisode 288</option>
+          <option value="289">Épisode 289</option>
+          <option value="290">Épisode 290</option>
+          <option value="291">Épisode 291</option>
+          <option value="292">Épisode 292</option>
+          <option value="293">Épisode 293</option>
+          <option value="294">Épisode 294</option>
+          <option value="295">Épisode 295</option>
+          <option value="296">Épisode 296</option>
+          <option value="297">Épisode 297</option>
+          <option value="298">Épisode 298</option>
+          <option value="299">Épisode 299</option>
+          <option value="300">Épisode 300</option>
+          <option value="301">Épisode 301</option>
+          <option value="302">Épisode 302</option>
+          <option value="303">Épisode 303</option>
+          <option value="304">Épisode 304</option>
+          <option value="305">Épisode 305</option>
+          <option value="306">Épisode 306</option>
+          <option value="307">Épisode 307</option>
+          <option value="308">Épisode 308</option>
+          <option value="309">Épisode 309</option>
+          <option value="310">Épisode 310</option>
+          <option value="311">Épisode 311</option>
+          <option value="312">Épisode 312</option>
+          <option value="313">Épisode 313</option>
+          <option value="314">Épisode 314</option>
+          <option value="315">Épisode 315</option>
+          <option value="316">Épisode 316</option>
+          <option value="317">Épisode 317</option>
+          <option value="318">Épisode 318</option>
+          <option value="319">Épisode 319</option>
+          <option value="320">Épisode 320</option>
+          <option value="321">Épisode 321</option>
+          <option value="322">Épisode 322</option>
+          <option value="323">Épisode 323</option>
+          <option value="324">Épisode 324</option>
+          <option value="325">Épisode 325</option>
+          <option value="326">Épisode 326</option>
+          <option value="327">Épisode 327</option>
+          <option value="328">Épisode 328</option>
+          <option value="329">Épisode 329</option>
+          <option value="330">Épisode 330</option>
+          <option value="331">Épisode 331</option>
+          <option value="332">Épisode 332</option>
+          <option value="333">Épisode 333</option>
+          <option value="334">Épisode 334</option>
+          <option value="335">Épisode 335</option>
+          <option value="336">Épisode 336</option>
+          <option value="337">Épisode 337</option>
+          <option value="338">Épisode 338</option>
+          <option value="339">Épisode 339</option>
+          <option value="340">Épisode 340</option>
+          <option value="341">Épisode 341</option>
+          <option value="342">Épisode 342</option>
+          <option value="343">Épisode 343</option>
+          <option value="344">Épisode 344</option>
+          <option value="345">Épisode 345</option>
+          <option value="346">Épisode 346</option>
+          <option value="347">Épisode 347</option>
+          <option value="348">Épisode 348</option>
+          <option value="349">Épisode 349</option>
+          <option value="350">Épisode 350</option>
+          <option value="351">Épisode 351</option>
+          <option value="352">Épisode 352</option>
+          <option value="353">Épisode 353</option>
+          <option value="354">Épisode 354</option>
+          <option value="355">Épisode 355</option>
+          <option value="356">Épisode 356</option>
+          <option value="357">Épisode 357</option>
+          <option value="358">Épisode 358</option>
+          <option value="359">Épisode 359</option>
+          <option value="360">Épisode 360</option>
+          <option value="361">Épisode 361</option>
+          <option value="362">Épisode 362</option>
+          <option value="363">Épisode 363</option>
+          <option value="364">Épisode 364</option>
+          <option value="365">Épisode 365</option>
+          <option value="366">Épisode 366</option>
+          <option value="367">Épisode 367</option>
+          <option value="368">Épisode 368</option>
+          <option value="369">Épisode 369</option>
+          <option value="370">Épisode 370</option>
+          <option value="371">Épisode 371</option>
+          <option value="372">Épisode 372</option>
+          <option value="373">Épisode 373</option>
+          <option value="374">Épisode 374</option>
+          <option value="375">Épisode 375</option>
+          <option value="376">Épisode 376</option>
+          <option value="377">Épisode 377</option>
+          <option value="378">Épisode 378</option>
+          <option value="379">Épisode 379</option>
+          <option value="380">Épisode 380</option>
+          <option value="381">Épisode 381</option>
+          <option value="382">Épisode 382</option>
+          <option value="383">Épisode 383</option>
+          <option value="384">Épisode 384</option>
+          <option value="385">Épisode 385</option>
+          <option value="386">Épisode 386</option>
+          <option value="387">Épisode 387</option>
+          <option value="388">Épisode 388</option>
+          <option value="389">Épisode 389</option>
+          <option value="390">Épisode 390</option>
+          <option value="391">Épisode 391</option>
+          <option value="392">Épisode 392</option>
+          <option value="393">Épisode 393</option>
+          <option value="394">Épisode 394</option>
+          <option value="395">Épisode 395</option>
+          <option value="396">Épisode 396</option>
+          <option value="397">Épisode 397</option>
+          <option value="398">Épisode 398</option>
+          <option value="399">Épisode 399</option>
+          <option value="400">Épisode 400</option>
+          <option value="401">Épisode 401</option>
+          <option value="402">Épisode 402</option>
+          <option value="403">Épisode 403</option>
+          <option value="404">Épisode 404</option>
+          <option value="405">Épisode 405</option>
+          <option value="406">Épisode 406</option>
+          <option value="407">Épisode 407</option>
+          <option value="408">Épisode 408</option>
+          <option value="409">Épisode 409</option>
+          <option value="410">Épisode 410</option>
+          <option value="411">Épisode 411</option>
+          <option value="412">Épisode 412</option>
+          <option value="413">Épisode 413</option>
+          <option value="414">Épisode 414</option>
+          <option value="415">Épisode 415</option>
+          <option value="416">Épisode 416</option>
+          <option value="417">Épisode 417</option>
+          <option value="418">Épisode 418</option>
+          <option value="419">Épisode 419</option>
+          <option value="420">Épisode 420</option>
+          <option value="421">Épisode 421</option>
+          <option value="422">Épisode 422</option>
+          <option value="423">Épisode 423</option>
+          <option value="424">Épisode 424</option>
+          <option value="425">Épisode 425</option>
+          <option value="426">Épisode 426</option>
+          <option value="427">Épisode 427</option>
+          <option value="428">Épisode 428</option>
+          <option value="429">Épisode 429</option>
+          <option value="430">Épisode 430</option>
+          <option value="431">Épisode 431</option>
+          <option value="432">Épisode 432</option>
+          <option value="433">Épisode 433</option>
+          <option value="434">Épisode 434</option>
+          <option value="435">Épisode 435</option>
+          <option value="436">Épisode 436</option>
+          <option value="437">Épisode 437</option>
+          <option value="438">Épisode 438</option>
+          <option value="439">Épisode 439</option>
+          <option value="440">Épisode 440</option>
+          <option value="441">Épisode 441</option>
+          <option value="442">Épisode 442</option>
+          <option value="443">Épisode 443</option>
+          <option value="444">Épisode 444</option>
+          <option value="445">Épisode 445</option>
+          <option value="446">Épisode 446</option>
+          <option value="447">Épisode 447</option>
+          <option value="448">Épisode 448</option>
+          <option value="449">Épisode 449</option>
+          <option value="450">Épisode 450</option>
+          <option value="451">Épisode 451</option>
+          <option value="452">Épisode 452</option>
+          <option value="453">Épisode 453</option>
+          <option value="454">Épisode 454</option>
+          <option value="455">Épisode 455</option>
+          <option value="456">Épisode 456</option>
+          <option value="457">Épisode 457</option>
+          <option value="458">Épisode 458</option>
+          <option value="459">Épisode 459</option>
+          <option value="460">Épisode 460</option>
+          <option value="461">Épisode 461</option>
+          <option value="462">Épisode 462</option>
+          <option value="463">Épisode 463</option>
+          <option value="464">Épisode 464</option>
+          <option value="465">Épisode 465</option>
+          <option value="466">Épisode 466</option>
+          <option value="467">Épisode 467</option>
+          <option value="468">Épisode 468</option>
+          <option value="469">Épisode 469</option>
+          <option value="470">Épisode 470</option>
+          <option value="471">Épisode 471</option>
+          <option value="472">Épisode 472</option>
+          <option value="473">Épisode 473</option>
+          <option value="474">Épisode 474</option>
+          <option value="475">Épisode 475</option>
+          <option value="476">Épisode 476</option>
+          <option value="477">Épisode 477</option>
+          <option value="478">Épisode 478</option>
+          <option value="479">Épisode 479</option>
+          <option value="480">Épisode 480</option>
+          <option value="481">Épisode 481</option>
+          <option value="482">Épisode 482</option>
+          <option value="483">Épisode 483</option>
+          <option value="484">Épisode 484</option>
+          <option value="485">Épisode 485</option>
+          <option value="486">Épisode 486</option>
+          <option value="487">Épisode 487</option>
+          <option value="488">Épisode 488</option>
+          <option value="489">Épisode 489</option>
+          <option value="490">Épisode 490</option>
+          <option value="491">Épisode 491</option>
+          <option value="492">Épisode 492</option>
+          <option value="493">Épisode 493</option>
+          <option value="494">Épisode 494</option>
+          <option value="495">Épisode 495</option>
+          <option value="496">Épisode 496</option>
+          <option value="497">Épisode 497</option>
+          <option value="498">Épisode 498</option>
+          <option value="499">Épisode 499</option>
+          <option value="500">Épisode 500</option>
+		    </select>
+      </div>
+<div id="videoContainer">
+  <iframe id="video_EP" width="790" height="540" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" allowScriptAccess="always" mozallowfullscreen="true" allow="encrypted-media"></iframe>
+</div>
+
+<script>
+$(document).ready(function(){
+  var episodes = [
+    {
+      lecteur: '1',
+      videos: [
+    
+    'https://video.sibnet.ru/shell.php?videoid=2945063',
+    'https://video.sibnet.ru/shell.php?videoid=2945064',
+    'https://video.sibnet.ru/shell.php?videoid=2945065',
+    'https://video.sibnet.ru/shell.php?videoid=3343514',
+    'https://video.sibnet.ru/shell.php?videoid=2945073',
+    'https://video.sibnet.ru/shell.php?videoid=2945077',
+    'https://video.sibnet.ru/shell.php?videoid=2945082',
+    'https://video.sibnet.ru/shell.php?videoid=3343517',
+    'https://video.sibnet.ru/shell.php?videoid=2945115',
+    'https://video.sibnet.ru/shell.php?videoid=2945122',
+    'https://video.sibnet.ru/shell.php?videoid=3343519',
+    'https://video.sibnet.ru/shell.php?videoid=2945129',
+    'https://video.sibnet.ru/shell.php?videoid=2945131',
+    'https://video.sibnet.ru/shell.php?videoid=2945145',
+    'https://video.sibnet.ru/shell.php?videoid=2945147',
+    'https://video.sibnet.ru/shell.php?videoid=2945149',
+    'https://video.sibnet.ru/shell.php?videoid=2945152',
+    'https://video.sibnet.ru/shell.php?videoid=2945154',
+    'https://video.sibnet.ru/shell.php?videoid=2945156',
+    'https://video.sibnet.ru/shell.php?videoid=2945159',
+    'https://video.sibnet.ru/shell.php?videoid=2945160',
+    'https://video.sibnet.ru/shell.php?videoid=2945161',
+    'https://video.sibnet.ru/shell.php?videoid=2945163',
+    'https://video.sibnet.ru/shell.php?videoid=2945164',
+    'https://video.sibnet.ru/shell.php?videoid=2945166',
+    'https://video.sibnet.ru/shell.php?videoid=2945168',
+    'https://video.sibnet.ru/shell.php?videoid=3343522',
+    'https://video.sibnet.ru/shell.php?videoid=2945182',
+    'https://video.sibnet.ru/shell.php?videoid=2945184',
+    'https://video.sibnet.ru/shell.php?videoid=2945189',
+    'https://video.sibnet.ru/shell.php?videoid=2945238',
+    'https://video.sibnet.ru/shell.php?videoid=2945241',
+    'https://video.sibnet.ru/shell.php?videoid=2945243',
+    'https://video.sibnet.ru/shell.php?videoid=2945247',
+    'https://video.sibnet.ru/shell.php?videoid=2945249',
+    'https://video.sibnet.ru/shell.php?videoid=2945251',
+    'https://video.sibnet.ru/shell.php?videoid=3343531',
+    'https://video.sibnet.ru/shell.php?videoid=2945253',
+    'https://video.sibnet.ru/shell.php?videoid=2945255',
+    'https://video.sibnet.ru/shell.php?videoid=2945258',
+    'https://video.sibnet.ru/shell.php?videoid=2945259',
+    'https://video.sibnet.ru/shell.php?videoid=3343534',
+    'https://video.sibnet.ru/shell.php?videoid=3343539',
+    'https://video.sibnet.ru/shell.php?videoid=2945265',
+    'https://video.sibnet.ru/shell.php?videoid=2945266',
+    'https://video.sibnet.ru/shell.php?videoid=2945268',
+    'https://video.sibnet.ru/shell.php?videoid=2945270',
+    'https://video.sibnet.ru/shell.php?videoid=2945272',
+    'https://video.sibnet.ru/shell.php?videoid=2945274',
+    'https://video.sibnet.ru/shell.php?videoid=2945275',
+    'https://video.sibnet.ru/shell.php?videoid=2945276',
+    'https://video.sibnet.ru/shell.php?videoid=2945277',
+    'https://video.sibnet.ru/shell.php?videoid=2945280',
+    'https://video.sibnet.ru/shell.php?videoid=2945284',
+    'https://video.sibnet.ru/shell.php?videoid=2945285',
+    'https://video.sibnet.ru/shell.php?videoid=2945286',
+    'https://video.sibnet.ru/shell.php?videoid=2945305',
+    'https://video.sibnet.ru/shell.php?videoid=2945306',
+    'https://video.sibnet.ru/shell.php?videoid=2945308',
+    'https://video.sibnet.ru/shell.php?videoid=2945309',
+    'https://video.sibnet.ru/shell.php?videoid=2946194',
+    'https://video.sibnet.ru/shell.php?videoid=2946195',
+    'https://video.sibnet.ru/shell.php?videoid=2946196',
+    'https://video.sibnet.ru/shell.php?videoid=2946197',
+    'https://video.sibnet.ru/shell.php?videoid=2945323',
+    'https://video.sibnet.ru/shell.php?videoid=2945324',
+    'https://video.sibnet.ru/shell.php?videoid=2945326',
+    'https://video.sibnet.ru/shell.php?videoid=2945328',
+    'https://video.sibnet.ru/shell.php?videoid=2945332',
+    'https://video.sibnet.ru/shell.php?videoid=2945334',
+    'https://video.sibnet.ru/shell.php?videoid=2946199',
+    'https://video.sibnet.ru/shell.php?videoid=2946200',
+    'https://video.sibnet.ru/shell.php?videoid=2945339',
+    'https://video.sibnet.ru/shell.php?videoid=2945348',
+    'https://video.sibnet.ru/shell.php?videoid=2945349',
+    'https://video.sibnet.ru/shell.php?videoid=2946465',
+    'https://video.sibnet.ru/shell.php?videoid=2946469',
+    'https://video.sibnet.ru/shell.php?videoid=3343545',
+    'https://video.sibnet.ru/shell.php?videoid=2946472',
+    'https://video.sibnet.ru/shell.php?videoid=2946474',
+    'https://video.sibnet.ru/shell.php?videoid=2946477',
+    'https://video.sibnet.ru/shell.php?videoid=3343547',
+    'https://video.sibnet.ru/shell.php?videoid=2946480',
+    'https://video.sibnet.ru/shell.php?videoid=2946485',
+    'https://video.sibnet.ru/shell.php?videoid=2946489',
+    'https://video.sibnet.ru/shell.php?videoid=2946490',
+    'https://video.sibnet.ru/shell.php?videoid=2946491',
+    'https://video.sibnet.ru/shell.php?videoid=2946494',
+    'https://video.sibnet.ru/shell.php?videoid=2946496',
+    'https://video.sibnet.ru/shell.php?videoid=2946497',
+    'https://video.sibnet.ru/shell.php?videoid=2946500',
+    'https://video.sibnet.ru/shell.php?videoid=2946567',
+    'https://video.sibnet.ru/shell.php?videoid=2946568',
+    'https://video.sibnet.ru/shell.php?videoid=3343548',
+    'https://video.sibnet.ru/shell.php?videoid=2946573',
+    'https://video.sibnet.ru/shell.php?videoid=2946574',
+    'https://video.sibnet.ru/shell.php?videoid=2946576',
+    'https://video.sibnet.ru/shell.php?videoid=4721961',
+    'https://video.sibnet.ru/shell.php?videoid=2946579',
+    'https://video.sibnet.ru/shell.php?videoid=2946580',
+    'https://video.sibnet.ru/shell.php?videoid=3530827',
+    'https://video.sibnet.ru/shell.php?videoid=2946583',
+    'https://video.sibnet.ru/shell.php?videoid=2946584',
+    'https://video.sibnet.ru/shell.php?videoid=2946585',
+    'https://video.sibnet.ru/shell.php?videoid=2946586',
+    'https://video.sibnet.ru/shell.php?videoid=2946588',
+    'https://video.sibnet.ru/shell.php?videoid=3343550',
+    'https://video.sibnet.ru/shell.php?videoid=2946600',
+    'https://video.sibnet.ru/shell.php?videoid=2949385',
+    'https://video.sibnet.ru/shell.php?videoid=2949381',
+    'https://video.sibnet.ru/shell.php?videoid=2952702',
+    'https://video.sibnet.ru/shell.php?videoid=2952703',
+    'https://www.myvi.top/embed/onq5bk9eukowdrj6zd3tqru9or',
+    'https://video.sibnet.ru/shell.php?videoid=2952705',
+    'https://video.sibnet.ru/shell.php?videoid=2952706',
+    'https://video.sibnet.ru/shell.php?videoid=2952707',
+    'https://video.sibnet.ru/shell.php?videoid=2952709',
+    'https://video.sibnet.ru/shell.php?videoid=3343551',
+    'https://video.sibnet.ru/shell.php?videoid=2952711',
+    'https://video.sibnet.ru/shell.php?videoid=2952712',
+    'https://video.sibnet.ru/shell.php?videoid=2952713',
+    'https://video.sibnet.ru/shell.php?videoid=2952714',
+    'https://video.sibnet.ru/shell.php?videoid=3343554',
+    'https://video.sibnet.ru/shell.php?videoid=2952716',
+    'https://video.sibnet.ru/shell.php?videoid=2952719',
+    'https://video.sibnet.ru/shell.php?videoid=2952720',
+    'https://video.sibnet.ru/shell.php?videoid=2952721',
+    'https://video.sibnet.ru/shell.php?videoid=2952722',
+    'https://video.sibnet.ru/shell.php?videoid=2952774',
+    'https://video.sibnet.ru/shell.php?videoid=2952775',
+    'https://video.sibnet.ru/shell.php?videoid=2952776',
+    'https://video.sibnet.ru/shell.php?videoid=2952777',
+    'https://video.sibnet.ru/shell.php?videoid=2952778',
+    'https://video.sibnet.ru/shell.php?videoid=2952779',
+    'https://video.sibnet.ru/shell.php?videoid=2952780',
+    'https://video.sibnet.ru/shell.php?videoid=2952782',
+    'https://video.sibnet.ru/shell.php?videoid=2952783',
+    'https://video.sibnet.ru/shell.php?videoid=2954147',
+    'https://video.sibnet.ru/shell.php?videoid=2954148',
+    'https://video.sibnet.ru/shell.php?videoid=2954150',
+    'https://video.sibnet.ru/shell.php?videoid=2954151',
+    'https://video.sibnet.ru/shell.php?videoid=2954153',
+    'https://video.sibnet.ru/shell.php?videoid=2954154',
+    'https://video.sibnet.ru/shell.php?videoid=2954155',
+    'https://video.sibnet.ru/shell.php?videoid=2954156',
+    'https://video.sibnet.ru/shell.php?videoid=2954159',
+    'https://video.sibnet.ru/shell.php?videoid=3343564',
+    'https://video.sibnet.ru/shell.php?videoid=2954163',
+    'https://video.sibnet.ru/shell.php?videoid=2954166',
+    'https://video.sibnet.ru/shell.php?videoid=2954171',
+    'https://video.sibnet.ru/shell.php?videoid=2954175',
+    'https://video.sibnet.ru/shell.php?videoid=2954177',
+    'https://video.sibnet.ru/shell.php?videoid=2954181',
+    'https://video.sibnet.ru/shell.php?videoid=2954183',
+    'https://video.sibnet.ru/shell.php?videoid=2955711',
+    'https://video.sibnet.ru/shell.php?videoid=2955712',
+    'https://video.sibnet.ru/shell.php?videoid=2955713',
+    'https://video.sibnet.ru/shell.php?videoid=2955714',
+    'https://video.sibnet.ru/shell.php?videoid=2955715',
+    'https://video.sibnet.ru/shell.php?videoid=2955716',
+    'https://video.sibnet.ru/shell.php?videoid=3343573',
+    'https://video.sibnet.ru/shell.php?videoid=2955718',
+    'https://video.sibnet.ru/shell.php?videoid=2955719',
+    'https://video.sibnet.ru/shell.php?videoid=2955720',
+    'https://video.sibnet.ru/shell.php?videoid=3343576',
+    'https://video.sibnet.ru/shell.php?videoid=2955722',
+    'https://video.sibnet.ru/shell.php?videoid=2955723',
+    'https://video.sibnet.ru/shell.php?videoid=2955724',
+    'https://video.sibnet.ru/shell.php?videoid=2956414',
+    'https://video.sibnet.ru/shell.php?videoid=3343583',
+    'https://video.sibnet.ru/shell.php?videoid=2956420',
+    'https://video.sibnet.ru/shell.php?videoid=2956421',
+    'https://video.sibnet.ru/shell.php?videoid=2956425',
+    'https://video.sibnet.ru/shell.php?videoid=2956427',
+    'https://video.sibnet.ru/shell.php?videoid=2956430',
+    'https://video.sibnet.ru/shell.php?videoid=2956433',
+    'https://video.sibnet.ru/shell.php?videoid=2956435',
+    'https://video.sibnet.ru/shell.php?videoid=2956437',
+    'https://video.sibnet.ru/shell.php?videoid=2956442',
+    'https://video.sibnet.ru/shell.php?videoid=2956444',
+    'https://video.sibnet.ru/shell.php?videoid=2956447',
+    'https://video.sibnet.ru/shell.php?videoid=2956448',
+    'https://video.sibnet.ru/shell.php?videoid=3343586',
+    'https://video.sibnet.ru/shell.php?videoid=2956451',
+    'https://video.sibnet.ru/shell.php?videoid=2956452',
+    'https://video.sibnet.ru/shell.php?videoid=2957276',
+    'https://video.sibnet.ru/shell.php?videoid=2957277',
+    'https://video.sibnet.ru/shell.php?videoid=2957297',
+    'https://video.sibnet.ru/shell.php?videoid=2957298',
+    'https://video.sibnet.ru/shell.php?videoid=2957299',
+    'https://video.sibnet.ru/shell.php?videoid=2957301',
+    'https://video.sibnet.ru/shell.php?videoid=2957302',
+    'https://video.sibnet.ru/shell.php?videoid=2957303',
+    'https://video.sibnet.ru/shell.php?videoid=2957307',
+    'https://video.sibnet.ru/shell.php?videoid=2957515',
+    'https://video.sibnet.ru/shell.php?videoid=2957518',
+    'https://video.sibnet.ru/shell.php?videoid=2957521',
+    'https://video.sibnet.ru/shell.php?videoid=2957523',
+    'https://video.sibnet.ru/shell.php?videoid=2957524',
+    'https://video.sibnet.ru/shell.php?videoid=3343596',
+    'https://video.sibnet.ru/shell.php?videoid=2957528',
+    'https://video.sibnet.ru/shell.php?videoid=2957529',
+    'https://video.sibnet.ru/shell.php?videoid=2957531',
+    'https://video.sibnet.ru/shell.php?videoid=2957532',
+    'https://video.sibnet.ru/shell.php?videoid=2957534',
+    'https://video.sibnet.ru/shell.php?videoid=2957535',
+    'https://video.sibnet.ru/shell.php?videoid=2958031',
+    'https://video.sibnet.ru/shell.php?videoid=2958036',
+    'https://video.sibnet.ru/shell.php?videoid=2958041',
+    'https://video.sibnet.ru/shell.php?videoid=2958044',
+    'https://video.sibnet.ru/shell.php?videoid=2958045',
+    'https://video.sibnet.ru/shell.php?videoid=3343604',
+    'https://video.sibnet.ru/shell.php?videoid=2958048',
+    'https://video.sibnet.ru/shell.php?videoid=2958051',
+    'https://video.sibnet.ru/shell.php?videoid=2958052',
+    'https://video.sibnet.ru/shell.php?videoid=2958053',
+    'https://video.sibnet.ru/shell.php?videoid=2958054',
+    'https://video.sibnet.ru/shell.php?videoid=2958055',
+    'https://video.sibnet.ru/shell.php?videoid=2958056',
+    'https://video.sibnet.ru/shell.php?videoid=2958060',
+    'https://video.sibnet.ru/shell.php?videoid=2958668',
+    'https://video.sibnet.ru/shell.php?videoid=2958669',
+    'https://video.sibnet.ru/shell.php?videoid=2958672',
+    'https://video.sibnet.ru/shell.php?videoid=2958674',
+    'https://video.sibnet.ru/shell.php?videoid=2958677',
+    'https://video.sibnet.ru/shell.php?videoid=2958679',
+    'https://video.sibnet.ru/shell.php?videoid=2958680',
+    'https://video.sibnet.ru/shell.php?videoid=2958683',
+    'https://video.sibnet.ru/shell.php?videoid=2958684',
+    'https://video.sibnet.ru/shell.php?videoid=2958685',
+    'https://video.sibnet.ru/shell.php?videoid=2958686',
+    'https://video.sibnet.ru/shell.php?videoid=2958687',
+    'https://video.sibnet.ru/shell.php?videoid=2958690',
+    'https://video.sibnet.ru/shell.php?videoid=2958692',
+    'https://video.sibnet.ru/shell.php?videoid=2958699',
+    'https://video.sibnet.ru/shell.php?videoid=2958701',
+    'https://video.sibnet.ru/shell.php?videoid=2958752',
+    'https://video.sibnet.ru/shell.php?videoid=2958753',
+    'https://video.sibnet.ru/shell.php?videoid=2958756',
+    'https://video.sibnet.ru/shell.php?videoid=3343608',
+    'https://video.sibnet.ru/shell.php?videoid=2958759',
+    'https://video.sibnet.ru/shell.php?videoid=2958760',
+    'https://video.sibnet.ru/shell.php?videoid=3343613',
+    'https://video.sibnet.ru/shell.php?videoid=2958762',
+    'https://video.sibnet.ru/shell.php?videoid=2958763',
+    'https://video.sibnet.ru/shell.php?videoid=2958768',
+    'https://video.sibnet.ru/shell.php?videoid=2958769',
+    'https://video.sibnet.ru/shell.php?videoid=2958770',
+    'https://video.sibnet.ru/shell.php?videoid=2959218',
+    'https://video.sibnet.ru/shell.php?videoid=2959220',
+    'https://video.sibnet.ru/shell.php?videoid=2959222',
+    'https://video.sibnet.ru/shell.php?videoid=2959226',
+    'https://video.sibnet.ru/shell.php?videoid=2959230',
+    'https://video.sibnet.ru/shell.php?videoid=2959233',
+    'https://video.sibnet.ru/shell.php?videoid=2959236',
+    'https://video.sibnet.ru/shell.php?videoid=2959238',
+    'https://video.sibnet.ru/shell.php?videoid=2959241',
+    'https://video.sibnet.ru/shell.php?videoid=2959243',
+    'https://video.sibnet.ru/shell.php?videoid=2959246',
+    'https://video.sibnet.ru/shell.php?videoid=2959248',
+    'https://video.sibnet.ru/shell.php?videoid=2959251',
+    'https://video.sibnet.ru/shell.php?videoid=2959696',
+    'https://video.sibnet.ru/shell.php?videoid=2959697',
+    'https://video.sibnet.ru/shell.php?videoid=2959698',
+    'https://video.sibnet.ru/shell.php?videoid=2959699',
+    'https://video.sibnet.ru/shell.php?videoid=2959700',
+    'https://video.sibnet.ru/shell.php?videoid=2959701',
+    'https://video.sibnet.ru/shell.php?videoid=2959702',
+    'https://video.sibnet.ru/shell.php?videoid=2959703',
+    'https://video.sibnet.ru/shell.php?videoid=2959705',
+    'https://video.sibnet.ru/shell.php?videoid=2959707',
+    'https://video.sibnet.ru/shell.php?videoid=2959709',
+    'https://video.sibnet.ru/shell.php?videoid=2959711',
+    'https://video.sibnet.ru/shell.php?videoid=2959712',
+    'https://video.sibnet.ru/shell.php?videoid=2959714',
+    'https://video.sibnet.ru/shell.php?videoid=3515886',
+    'https://video.sibnet.ru/shell.php?videoid=2959717',
+    'https://video.sibnet.ru/shell.php?videoid=2959718',
+    'https://video.sibnet.ru/shell.php?videoid=2959720',
+    'https://video.sibnet.ru/shell.php?videoid=3343292',
+    'https://video.sibnet.ru/shell.php?videoid=3343294',
+    'https://video.sibnet.ru/shell.php?videoid=3343295',
+    'https://video.sibnet.ru/shell.php?videoid=3343296',
+    'https://video.sibnet.ru/shell.php?videoid=3343297',
+    'https://video.sibnet.ru/shell.php?videoid=3560501',
+    'https://video.sibnet.ru/shell.php?videoid=3343299',
+    'https://video.sibnet.ru/shell.php?videoid=3343300',
+    'https://video.sibnet.ru/shell.php?videoid=3343305',
+    'https://video.sibnet.ru/shell.php?videoid=3343311',
+    'https://video.sibnet.ru/shell.php?videoid=3343320',
+    'https://video.sibnet.ru/shell.php?videoid=3343321',
+    'https://video.sibnet.ru/shell.php?videoid=3343322',
+    'https://video.sibnet.ru/shell.php?videoid=3343323',
+    'https://video.sibnet.ru/shell.php?videoid=3343324',
+    'https://video.sibnet.ru/shell.php?videoid=3343325',
+    'https://video.sibnet.ru/shell.php?videoid=3343326',
+    'https://video.sibnet.ru/shell.php?videoid=3343327',
+    'https://video.sibnet.ru/shell.php?videoid=3343328',
+    'https://video.sibnet.ru/shell.php?videoid=3343329',
+    'https://video.sibnet.ru/shell.php?videoid=3343332',
+    'https://video.sibnet.ru/shell.php?videoid=3343338',
+    'https://video.sibnet.ru/shell.php?videoid=3343342',
+    'https://video.sibnet.ru/shell.php?videoid=3343344',
+    'https://video.sibnet.ru/shell.php?videoid=3343347',
+    'https://video.sibnet.ru/shell.php?videoid=3343349',
+    'https://video.sibnet.ru/shell.php?videoid=3343350',
+    
+      ]
+    }
+    // Ajoutez d'autres lecteurs et leurs vidéos ici
+     
+  ];
+  
+  var currentEpisode = 1;
+
+  function updateVideo() {
+    var episode = $('#selection_EP').val();
+    var lecteur = $('#selection_LECTEUR').val();
+    
+    if (episode && lecteur) {
+      var videoLink = episodes.find(function(ep) {
+        return ep.lecteur === lecteur;
+      }).videos[episode - 1];
+      
+      if (videoLink) {
+        $('#video_EP').attr('src', videoLink);
+      }
+      else {
+        $('#videoContainer').html('Lecteur ou épisode non valide.');
+      }
+    }
+  }
+
+  $('#selection_EP, #selection_LECTEUR').change(function(){
+    updateVideo();
+  });
+
+  $('#PRECEDENT').click(function() {
+    if (currentEpisode > 1) {
+      currentEpisode--;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  $('#SUIVANT').click(function() {
+    var totalEpisodes = $('#selection_EP option').length;
+    if (currentEpisode < totalEpisodes) {
+      currentEpisode++;
+      $('#selection_EP').val(currentEpisode);
+      updateVideo();
+    }
+  });
+
+  // Code pour charger la première vidéo par défaut
+  var defaultEpisode = '1';
+  var defaultLecteur = '1';
+
+  $('#selection_EP').val(defaultEpisode);
+  $('#selection_LECTEUR').val(defaultLecteur);
+  updateVideo();
+});
+</script>
+
+
+		  
+        
+        <p id="phrase_grise">Un problème sur les vidéos ? Changez de lecteur (sinon consultez <a id="lien_bleu" href="lien_page.html">la page aide</a> ).</p>
+        <p id="Dernier_EP_S">Dernier épisode selectionné: épisode 1</p>
+        <h1 id="Boruto_détails">Naruto Shippuden</h1>
+        <h2 id="avec_fillers">SANS FILLERS</h2>
+        <img id="drapeau_france" src="images/France.png" alt="drapeau france"/>
+        <h3 id="VF">VF</h3>
+        
+         <footer id="footer_EP">
+		      <div>
+			      <ul class="menu_footer">
+				      <li><a href="index.html">Accueil</a></li>
+				      <li><a href="Catégories.html">Catégories</a></li>
+				      <li><a href="Blog.html">Blog</a></li>
+				      <li><a href="Contact.html">Contact</a></li>
+				      <li><a href="Connexion.html">Connexion</a></li>
+	          </ul>
+          </div>
+
+
+          
+        
+      
+	        <a href="index.html"><h1 class="icon-expand_less" ></h1></a>
+	  
+	        <a class="logo_footer" href="index.html"><img src="images/logo.png" alt="logo de la page"/></a>
+		
+		    </footer>
+		    
+		</body>
+	</html>
